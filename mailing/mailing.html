@@ -41,6 +41,15 @@
         .td_espace{
             font-size:1px;line-height: 1;
         }
+        .td_rond>p{
+            background: #F3EE7F;
+            color: #fff;
+            width:25px;
+            text-align: center;
+            font: 11px Montserrat;
+            padding: 6px 0;
+            border-radius: 15px;
+        }
         .principal_titre_td{
             font:800 25px Montserrat, sans-serif;color: #395c5e;letter-spacing: 10px;text-transform: uppercase;background: transparent;
         }
@@ -91,63 +100,10 @@
             width:70%;
             max-width: 400px;
         }
-        .aspect_left{
-            position: relative;
-            margin-left: 50px;
-        }
-        .aspect_right{
-            position: relative;
-            margin-right: 50px;
-        }
         .aspect_right td{
             text-align: right;
         }
-        .aspect_left:before,
-        .aspect_right:before{
-            content:'';
-            background: #F3EE7F;
-            padding: 6px 9px;
-            border-radius: 15px;
-            font-size: 11px;
-            color: #fff;
-            text-align: center;
-            position: absolute;
-        }
-        .aspect_left:before{
-            left:-40px;
-            top:10px;
-        }
-        .aspect_right:before{
-            right:-40px;
-            top:10px;
-        }
-        .first_aspect:before {
-            content: '1';
-        }
-        .second_aspect:before {
-            content: '2';
-        }
-        .third_aspect:before {
-            content: '3';
-        }
-        .forth_aspect:before {
-            content: '4';
-        }
-        .fifth_aspect:before {
-            content: '5';
-        }
-        .sixth_aspect:before {
-            content: '6';
-        }
-        .triangle{
-            position: relative;
-        }
-        .triangle:after{
-            content : '';
-            position:absolute;
-            top:50%;
-            margin-top: -10px;
-            right:-5px;
+        .triangle>div{
             width: 0;
             height: 0;
             border-style: solid;
@@ -280,7 +236,7 @@
     </tr>
     <!--FIN_ESPACE-->
     <!--TITRE - JE SUIS ALICE SEVIN - DEBUT-->
-    <tr align="center">
+    <tr align="center" width="100%">
         <td>
             <table>
                 <tr>
@@ -298,13 +254,19 @@
     <!--TEXTE - JE SUIS ALICE SEVIN - DEBUT-->
     <tr align="center" width="100%">
         <td>
-            <table  class="recherche">
+            <table class="recherche">
                 <tr height="40">
                     <td width="50%" align="center" style="text-transform:uppercase;background:#96e0e4;color:#fff;border: 2px solid #96e0e4;font-size:12px">Je recherche</td>
                     <td width="50%" align="center" style="text-transform:uppercase;color:#86c7cb;border: 2px solid #96e0e4;font-size:12px">à partir de</td>
                 </tr>
+            </table>
+        </td>
+    </tr>
+    <tr align="center" width="100%">
+        <td>
+            <table  class="recherche">
                 <tr height="100">
-                    <td width="50%" align="center" class="triangle">
+                    <td width="40%" align="center">
                         <table width='100%'>
                             <tr class="td_bold" align="center">
                                 <td height="30">Un stage</td>
@@ -314,7 +276,8 @@
                             </tr>
                         </table>
                     </td>
-                    <td width="50%" align="center">
+                    <td width="10%" align="center" class="triangle"><div></div></td>
+                    <td width="40%" align="center">
                         <table width='100%'>
                             <tr class="td_bold" align="center">
                                 <td  height="30">04 juillet 2016</td>
@@ -326,7 +289,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td width="50%" align="center" class="triangle">
+                    <td width="40%" align="center">
                         <table width='100%'>
                             <tr class="td_bold" align="center">
                                 <td  height="30">Une Alternance</td>
@@ -336,7 +299,8 @@
                             </tr>
                         </table>
                     </td>
-                    <td width="50%" height="50" align="center">
+                    <td width="10%" align="center" class="triangle"><div></div></td>
+                    <td width="40%" height="50" align="center">
                         <table width='100%'>
                             <tr class="td_bold" align="center">
                                 <td  height="30">Octobre 2016</td>
@@ -412,8 +376,9 @@
                     <td width="45%">
                         <table align="center">
                             <tr>
-                                <td align="center">
-                                    <table width="150" class="aspect_left first_aspect">
+                                <td  width="50" align="left" class="td_rond"><p>1</p></td>
+                                <td align="left" width="125">
+                                    <table width="100%" class="aspect_left first_aspect">
                                         <tr>
                                             <td height="30" class="td_bold">Le Webdesign</td>
                                         </tr>
@@ -429,7 +394,8 @@
                             </tr>
                             <!--FIN_ESPACE-->
                             <tr>
-                                <td align="center">
+                                <td  width="25" align="left" class="td_rond"><p>2</p></td>
+                                <td align="left" width="125">
                                     <table width="150" class="aspect_left second_aspect">
                                         <tr>
                                             <td height="30" class="td_bold">L’Intégration</td>
@@ -446,7 +412,8 @@
                             </tr>
                             <!--FIN_ESPACE-->
                             <tr>
-                                <td align="center" >
+                                <td  width="50" align="left" class="td_rond"><p>3</p></td>
+                                <td align="left" width="125">
                                     <table width="150" class="aspect_left third_aspect">
                                         <tr>
                                             <td height="30" class="td_bold">Le Responsive</td>
@@ -462,7 +429,7 @@
                     <td width="45%">
                         <table align="center">
                             <tr>
-                                <td>
+                                <td align="right" width="125">
                                     <table width="150" class="aspect_right forth_aspect">
                                         <tr>
                                             <td height="30" class="td_bold">Le Front-End</td>
@@ -472,6 +439,7 @@
                                         </tr>
                                     </table>
                                 </td>
+                                <td  width="50" align="right" class="td_rond"><p>4</p></td>
                             </tr>
                             <!--DEBUT_ESPACE-->
                             <tr>
@@ -479,7 +447,7 @@
                             </tr>
                             <!--FIN_ESPACE-->
                             <tr>
-                                <td>
+                                <td align="right" width="125">
                                     <table width="150" class="aspect_right fifth_aspect">
                                         <tr>
                                             <td height="30" class="td_bold">Le Back-end</td>
@@ -489,7 +457,7 @@
                                         </tr>
                                     </table>
                                 </td>
-                                </td>
+                                <td  width="50" align="right" class="td_rond"><p>5</p></td>
                             </tr>
                             <!--DEBUT_ESPACE-->
                             <tr>
@@ -497,7 +465,7 @@
                             </tr>
                             <!--FIN_ESPACE-->
                             <tr>
-                                <td>
+                                <td align="right" width="125">
                                     <table width="150" class="aspect_right sixth_aspect">
                                         <tr>
                                             <td height="30" class="td_bold">Les CMS</td>
@@ -507,6 +475,7 @@
                                         </tr>
                                     </table>
                                 </td>
+                                <td  width="50" align="right" class="td_rond"><p>6</p></td>
                             </tr>
                         </table>
                     </td>
