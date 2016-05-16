@@ -71,7 +71,9 @@ nav a{
 .Home header>div,
 .Contact header>div,
 .Home header .responsive_nav,
-.Contact header .responsive_nav{
+.Contact header .responsive_nav,
+.Error header .responsive_nav,
+.Error header>div{
     background: #CCECEE;
     transition: background 1s;
 }
@@ -86,7 +88,8 @@ nav a{
     transition: background 1s;
 }
 .Home nav a,
-.Contact nav a{
+.Contact nav a,
+.Error nav a{
     color:#578e92;
 }
 .About nav a{
@@ -107,7 +110,9 @@ header a:hover:after{
 .Home nav .activeLink:after,
 .Home nav a:hover:after,
 .Contact nav .activeLink:after,
-.Contact nav a:hover:after{
+.Contact nav a:hover:after,
+.Error nav .activeLink:after,
+.Error nav a:hover:after{
     content: url(../images/wave1.svg);
 }
 .About nav .activeLink:after,
@@ -119,7 +124,8 @@ header a:hover:after{
 /*_____________________________________________SECTIONS_____________________________________________*/
 /*BACKGROUND SECTIONS COLOR*/
 .Home,
-.Contact{
+.Contact,
+.Error{
     background: #fff;
     transition: background 0.5s;
 }
@@ -193,15 +199,18 @@ header a:hover:after{
 }
 /*_________________________________HOME_________________________________*/
 .Home .title h1,
-.Contact .title h1{
+.Contact .title h1,
+.Error .title h1{
     color:#395c5e;
 }
 .Home .title h2,
-.Contact .title h2{
+.Contact .title h2,
+.Error .title h2{
     color:#578e92;
 }
 .Home .title:after,
-.Contact .title:after{
+.Contact .title:after,
+.Error .title:after{
     content: url(../images/wave_blue.svg);
 }
 .Home .title>div{
@@ -218,7 +227,8 @@ header a:hover:after{
     color:#34999f;
     margin: 0 auto;
 }
-.Home .content a{
+.Home .content a,
+.Error .content a{
     color:#73ccd1;
     background: transparent;
     border-color:#6dc9cf;
@@ -227,7 +237,8 @@ header a:hover:after{
     text-shadow: 0 0 0 rgba(0,0,0,0);
     box-shadow: 0 0 0 rgba(0,0,0,0);
 }
-.Home .content a:hover{
+.Home .content a:hover,
+.Error .content a:hover{
     color: #fff;
     background: #73ccd1;
     border-color: #73ccd1;
@@ -241,7 +252,8 @@ header a:hover:after{
 }
 .About .title>div:first-child,
 .Projects .title>div:first-child,
-.Contact .title>div:first-child{
+.Contact .title>div:first-child,
+.Error .title>div:first-child{
     width: 50%;
     max-width: 386px;
     min-width: 380px;
@@ -512,7 +524,8 @@ header a:hover:after{
     left: 25%;
 }
 /*__________________________________CONTACT__________________________________*/
-.Contact .number_title>p{
+.Contact .number_title>p,
+.Error .number_title>p{
     color:rgba(204, 236, 238, 0.58);
 }
 .Contact .content a{
@@ -586,7 +599,6 @@ header a:hover:after{
     text-decoration: underline;
     text-transform: none;
     font-size: 15px;
-    font-weight: 300;
     width:  auto;
     padding: 0;
     font-weight: 400;
@@ -628,17 +640,25 @@ header a:hover:after{
     .Home,
     .About,
     .Projects,
-    .Contact{
+    .Contact,
+    .Error{
         transition: background 0.9s;
     }
-    .Home header>div,
+    .Home,
+    .About,
+    .Projects,
+    .Contact,
+    .Error,
+    .Home header > div,
     .Home header .responsive_nav,
-    .About header>div,
+    .Error header > div,
+    .Error header .responsive_nav,
+    .About header > div,
     .About header .responsive_nav,
-    .Projects header>div,
+    .Projects header > div,
     .Projects header .responsive_nav,
-    .Contact header>div,
-    .Contact header .responsive_nav{
+    .Contact header > div,
+    .Contact header .responsive_nav {
         transition: background 0.7s;
     }
     /*GENERAL*/
@@ -730,8 +750,8 @@ header a:hover:after{
     .time_line>div:last-child>small:before {
         left: 50%;
     }
-    #about_competence .time_line>div
-    ,.time_line>div{
+    #about_competence .time_line>div,
+    .time_line>div{
         margin: 30px auto 80px;
         display: block;
     }
@@ -877,8 +897,11 @@ header a:hover:after{
     .About,
     .Projects,
     .Contact,
+    .Error,
     .Home header > div,
     .Home header .responsive_nav,
+    .Error header > div,
+    .Error header .responsive_nav,
     .About header > div,
     .About header .responsive_nav,
     .Projects header > div,
