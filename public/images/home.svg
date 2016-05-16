@@ -1,0 +1,38 @@
+<svg id="Groupe_12" data-name="Groupe 12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.59 57.892">
+  <defs>
+    <style>
+      .maison-1, .maison-2, .maison-3 {
+        fill: none;
+        fill-rule: evenodd;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: dash 20s linear forwards;
+      }
+
+      .maison-1, .maison-2 {
+        stroke: #6dc9cf;
+      }
+
+      .maison-1 {
+        stroke-width: 3.15px;
+      }
+      .maison-2, .maison-3 {
+        stroke-width: 2.51px;
+      }
+
+      .maison-3 {
+        stroke: #7ed0d5;
+      }
+      @keyframes dash {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+    </style>
+  </defs>
+  <path id="Forme_3" data-name="Forme 3" class="maison-1" d="M3806.76,189.321l-27.26-21.714-27.26,21.714" transform="translate(-3748.705 -162.019)"/>
+  <path id="Forme_2" data-name="Forme 2" class="maison-2" d="M3760.55,181.321v34.814h37.9V181.321" transform="translate(-3748.705 -162.019)"/>
+  <path id="Forme_6" data-name="Forme 6" class="maison-3" d="M3773.22,189.581h11.42v-6.233h-11.42v7.146" transform="translate(-3748.705 -162.019)"/>
+  <path id="Forme_7" data-name="Forme 7" class="maison-3" d="M3778.93,189.581v-6.926" transform="translate(-3748.705 -162.019)"/>
+  <path id="Forme_5" data-name="Forme 5" class="maison-2" d="M3783.51,216.75V200.793h-9.15V216.75" transform="translate(-3748.705 -162.019)"/>
+</svg>
