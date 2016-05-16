@@ -89,13 +89,23 @@ nav a{
 }
 .Home nav a,
 .Contact nav a,
-.Error nav a{
+.Error nav a,
+.Home .icon-menu1:before,
+.Home .icon-cancel:before,
+.Contact .icon-menu1:before,
+.Contact .icon-cancel:before,
+.Error .icon-menu1:before,
+.Error .icon-cancel:before{
     color:#578e92;
 }
-.About nav a{
+.About nav a,
+.About .icon-menu1:before,
+.About .icon-cancel:before{
     color:#fff;
 }
-.Projects nav a{
+.Projects nav a,
+.Projects .icon-menu1:before,
+.Projects .icon-cancel:before{
     color:#C3B752;
 }
 /*HEADER_WAVES*/
@@ -635,7 +645,7 @@ header a:hover:after{
     stroke:#C3B752;
 }
 /*_____________________________________MEDIAQUERIES____________________________________________*/
-@media only screen  and (max-width : 768px),  only screen  and (max-height : 650px){
+@media screen  and (max-width : 768px), screen  and (max-height : 650px){
     /*TRANSITIONS*/
     .Home,
     .About,
@@ -891,7 +901,7 @@ header a:hover:after{
         top:0;
     }
 }
-@media only screen  and (max-width : 480px) {
+@media screen  and (max-width : 480px) {
     /*TRANSITIONS*/
     .Home,
     .About,
