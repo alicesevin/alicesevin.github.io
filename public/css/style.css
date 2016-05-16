@@ -932,8 +932,7 @@ header a:hover:after{
         margin: -2px auto 0;
     }
     .About .title>div:first-child, .Projects .title>div:first-child, .Contact .title>div:first-child, .Error .title>div:first-child{
-        width: 300px;
-        top:23%;
+        display:none;
     }
     .Contact .content ul{
         height:310px;
