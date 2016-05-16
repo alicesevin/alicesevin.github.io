@@ -266,7 +266,7 @@ header a:hover:after{
 .Error .title>div:first-child{
     width: 50%;
     max-width: 386px;
-    min-width: 380px;
+    min-width: 300px;
     height: 250px;
     position: absolute;
     top: 10%;
@@ -376,14 +376,14 @@ header a:hover:after{
     transform: translate(-115%);
 }
 #about_competence .time_line {
-    width: 810px;
+    width: auto;
     margin: 0 auto;
 }
 #about_competence .time_line strong{
     display: block;
 }
 #about_competence .time_line>div{
-    margin: 30px 10px 80px;
+    margin: 30px -5px 80px;
 }
 /*__________________________________Projects__________________________________*/
 .Projects .title h1{
@@ -646,4 +646,294 @@ header a:hover:after{
 }
 .Error .title{
     margin-top: 200px;
+}
+/*_____________________________________MEDIAQUERIES____________________________________________*/
+@media screen  and (max-width : 767px), screen  and (max-height : 650px){
+    /*TRANSITIONS*/
+    .Home,
+    .About,
+    .Projects,
+    .Contact,
+    .Error{
+        transition: background 0.9s;
+    }
+    .Home,
+    .About,
+    .Projects,
+    .Contact,
+    .Error,
+    .Home header > div,
+    .Home header .responsive_nav,
+    .Error header > div,
+    .Error header .responsive_nav,
+    .About header > div,
+    .About header .responsive_nav,
+    .Projects header > div,
+    .Projects header .responsive_nav,
+    .Contact header > div,
+    .Contact header .responsive_nav {
+        transition: background 0.7s;
+    }
+    /*GENERAL*/
+    body,section,html{
+        height: auto;
+    }
+    header{
+        height: auto;
+        position: fixed;
+        box-shadow: 2px 2px 20px rgba(0,0,0,0.05);
+    }
+    header .responsive_nav{
+        display:block;
+        width: 100%;
+        z-index: 10;
+        cursor: pointer;
+        position: absolute;
+        padding: 20px 0;
+        border: none;
+        outline: none;
+    }
+    .responsive_close{
+        display: none;
+    }
+    header nav{
+        position: static;
+        z-index: 6;
+    }
+    header>div{
+        position: static;
+        padding: 20px 0 30px;
+        z-index: 8;
+        margin-top: -500px;
+    }
+    nav li{
+        display: block;
+        margin: 50px auto;
+    }
+    section{
+        position: static;
+        transform: translate(0%, 0%);
+        margin-top: 120px;
+        margin-bottom: 20px;
+    }
+    /*HOME*/
+    .Home #sectionAdd{
+        margin-bottom: 50px;
+    }
+    .Home .content p{
+        width: 80%;
+    }
+    /*FOOTER*/
+    #next{
+        position: static;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    /*ABOUT*/
+    #about_competence .time_line {
+        width: auto;
+    }
+    .about_section>div{
+        height: auto;
+        margin-top: 60px;
+    }
+    .About section,
+    .Contact section{
+        margin-top: 200px;
+    }
+    .time_line>div:last-child{
+        margin-bottom: 50px;
+    }
+
+    .time_line>div:nth-child(2)>small:after,
+    #about_competence .time_line>div:nth-child(5)>small:after,
+    .time_line>div:first-child>small:before {
+        display:none;
+    }
+    .time_line>div:nth-child(2)>small:before,
+    #about_competence .time_line>div:nth-child(3)>small:before,
+    #about_competence .time_line>div:nth-child(5)>small:before,
+    #about_competence .time_line>div:nth-child(4)>small:after,
+    .time_line>div:last-child>small:before{
+        width:0;
+        height: 45%;
+        top: -64px;
+    }
+    .time_line>div:nth-child(2)>small:before,
+    .time_line>div:last-child>small:before {
+        left: 50%;
+    }
+    #about_competence .time_line>div,
+    .time_line>div{
+        margin: 30px auto 80px;
+        display: block;
+    }
+    .time_line p{
+        width: 100%;
+    }
+    .About .time_line small {
+        margin-bottom: 10px;
+    }
+    #about_formation .time_line>div:nth-child(2)>small:before{
+        height: 40%;
+    }
+    /*PROJECTS*/
+    .activeCard{
+        position: static;
+        transform: translate(0%);
+        padding: 30px 15px 20px;
+        box-shadow: none;
+        height: 240px;
+        margin: 10px 10px;
+        width: 170px;
+        background: #fff;
+        transition: none;
+    }
+    .Projects .activeCard .cardContent a {
+        font-size: 14px;
+        padding: 12px;
+        width: 110px;
+        border-color: #C3B752;
+        color:#C3B752;
+    }
+    .Projects .activeCard .cardContent a:hover {
+        border-color: #C3B752;
+        background: #C3B752;
+        color: #FFF;
+    }
+    .card .icon-test-tube:before,
+    .card .icon-pen:before,
+    .card .icon-monitor:before,
+    .activeCard .test-tube:before,
+    .activeCard .icon-pen:before,
+    .activeCard .icon-monitor:before{
+        font-size: 60px;
+        color: #DAD39A;
+    }
+    .activeCard .test-tube,
+    .activeCard .icon-pen,
+    .activeCard .icon-monitor{
+        animation: none;
+        transform-origin: 0% 0%;
+    }
+    .activeCard .cardInner span{
+        width: 80px;
+        left: 50%;
+    }
+    .activeCard .cardContent p {
+        font-size: 13px;
+        line-height: 17px;
+        max-width: 240px;
+        margin-top: 20px;
+        color: #C8BD5B;
+    }
+    .activeCard .cardContent strong {
+        font-size: 14px;
+        margin-top: 0;
+        max-width: 130px;
+        color: #6B663B;
+    }
+    .card{
+        height: 320px;
+        transition: none;
+        width: 220px;
+    }
+    .cardContent a{
+        font-size: 14px;
+        padding: 12px;
+        width: 110px;
+        display: block;
+    }
+    .Projects #sectionAdd{
+        margin: 200px auto 40px;
+    }
+    .Projects .content{
+        margin: 0;
+    }
+    .Projects .content div {
+        margin: 10px 10px;
+    }
+    /*CONTACT*/
+    .cardContent strong{
+        font-size: 14px;
+        max-width: 130px;
+    }
+    .cardContent p{
+        font-size: 13px;
+        margin: 30px auto;
+    }
+    .cardContent{
+        bottom: 20px;
+    }
+    .contactBackgroundActive{
+        left: 0;
+        transition: top 1s;
+    }
+    .Contact .content ul{
+        width: 196px;
+    }
+    .contactLink{
+        display: block;
+        position: absolute;
+        left: 0;
+    }
+    .contactLink div{
+        transition: none;
+    }
+    .contactActive div{
+        transition: none;
+    }
+    #mail,
+    #tel,
+    #linkedin{
+        left:0;
+    }
+    #mail{
+        top: 58px;
+    }
+    #mail.contactActive div{
+        margin-top: 90px;
+    }
+    #tel.contactActive div{
+        margin-top: 145px;
+    }
+    #linkedin{
+        top: 116px;
+    }
+    #tel{
+        top:0;
+    }
+}
+@media screen and (max-width : 480px) {
+    /*TRANSITIONS*/
+    .Home,
+    .About,
+    .Projects,
+    .Contact,
+    .Error,
+    .Home header > div,
+    .Home header .responsive_nav,
+    .Error header > div,
+    .Error header .responsive_nav,
+    .About header > div,
+    .About header .responsive_nav,
+    .Projects header > div,
+    .Projects header .responsive_nav,
+    .Contact header > div,
+    .Contact header .responsive_nav {
+        transition: background 0s;
+    }
+
+    .title h2 {
+        line-height: 25px;
+        max-width: 350px;
+        margin: -2px auto 0;
+    }
+    .About .title>div:first-child, .Projects .title>div:first-child, .Contact .title>div:first-child, .Error .title>div:first-child{
+        width: 300px;
+        top:23%;
+    }
+    .Contact .content ul{
+        height:310px;
+    }
 }
