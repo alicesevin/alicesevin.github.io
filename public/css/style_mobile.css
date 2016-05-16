@@ -1,0 +1,24 @@
+/*TRANSITIONS*/
+.Home,
+.About,
+.Projects,
+.Contact,
+.Error,
+.Home header > div,
+.Home header .responsive_nav,
+.Error header > div,
+.Error header .responsive_nav,
+.About header > div,
+.About header .responsive_nav,
+.Projects header > div,
+.Projects header .responsive_nav,
+.Contact header > div,
+.Contact header .responsive_nav {
+    transition: background 0s;
+}
+
+.title h2 {
+    line-height: 25px;
+    max-width: 350px;
+    margin: -2px auto 0;
+}
