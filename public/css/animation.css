@@ -13,11 +13,13 @@
 .Projects .cls-3,.Projects  .cls-5,.Projects  .cls-9 {
     fill: #fff;
 }
-.Contact  .cls-2,.Contact  .cls-4,.Contact  .cls-7{
+.Contact  .cls-2,.Contact  .cls-4,.Contact  .cls-7,
+.Error  .cls-2,.Error  .cls-4,.Error  .cls-7{
     fill: rgb(179, 237, 241);
 }
 
-.Contact .cls-3,.Contact  .cls-5,.Contact  .cls-9 {
+.Contact .cls-3,.Contact  .cls-5,.Contact  .cls-9,
+.Error .cls-3,.Error  .cls-5,.Error  .cls-9{
     fill:#EAF1AB;
 }
 #circle_1,#circle_7,#circle_8,#circle_11,#circle_15,#circle_19,#circle_18,#circle_16{
