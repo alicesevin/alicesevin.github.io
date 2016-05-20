@@ -712,5 +712,7 @@ footer .row{
         top: 50%;
         margin-left: -110px;
         margin-top: -110px;
+        font-size: 20px;
+        line-height: 30px;
     }
 }
