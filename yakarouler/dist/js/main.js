@@ -339,7 +339,7 @@ $(document).ready(function(){
 
         switch (filterSet){
             default:
-                data = 'public/js/products.json';
+                data = 'dist/js/products.json';
                 addField = 'id';
                 categories = ["Filtres & Autres","Chaines à neige","Chambre à air","Son et vidéo","Pneus","Moteurs"];
                 for(var i=0;i<categories.length;i++){
@@ -404,7 +404,7 @@ $(document).ready(function(){
         $( ".magic_research" ).slideUp(500);
         $('body').animate({scrollTop: 0},600);
     });
-
+    $('#alternative_research_car').closest('span').after(alternative_car_model);
     /*Add or remove parts of magical sentence*/
     $(document).on('change','#alternative_research_car',function() {
         if ($(this).val() == 'marque' && !($('.alternative_research>form>p>span:nth-child(2)').hasClass('alternative_div_model'))) {
@@ -412,10 +412,9 @@ $(document).ready(function(){
             $('.alternative_div_detail').remove();
             $('.help_car').remove();
         } else {
-            if(!($('.alternative_research>form>p>span:nth-child(2)').hasClass('alternative_div_detail'))) {
+                $('.alternative_div_detail').remove();
                 $('.alternative_div_model').remove();
                 $('#alternative_research_car').closest('span').after(alternative_car_detail);
-            }
             if ($(this).val() == 'carte') {
                 $('#alternative_research_carDetail').after(help_car);
             } else {
@@ -457,6 +456,12 @@ $(document).ready(function(){
     });
     $(document).on('click','#eac-container-principal_researchInput>ul>li',function(){
         filterResearch(filterSet,research);
+    });
+    $(document).on('keydown','#principal_researchInput',function(event){
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            filterResearch(filterSet,research);
+        }
     });
 
     /*add question to principal research input related on user steps*/
@@ -503,13 +508,15 @@ $(document).ready(function(){
             }
             $('#principalResearch-questions').empty();
             $('#principalResearch-questions').append('<p>' + question + '</p>');
-            $('#principal_researchInput').val('');
             if ($('#principalResearch-questions>p').length > 0) {
                 $('.easy-autocomplete-container').find('ul').css('margin-top', '75px');
             } else {
                 $('.easy-autocomplete-container').find('ul').css('margin-top', '29px');
             }
+            $('#principal_researchInput').val('');
             $('#principal_researchInput').focus();
+        }else{
+            submitForm();
         }
     };
 
@@ -531,6 +538,8 @@ $(document).ready(function(){
                 researchSend += query;
             });
             $('#principal_researchInput').val(researchSend);
+            $('#principal_researchForm').submit();
+        }else{
             $('#principal_researchForm').submit();
         }
     };
