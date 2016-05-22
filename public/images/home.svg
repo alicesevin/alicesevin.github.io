@@ -7,6 +7,9 @@
         stroke-dasharray: 1000;
         stroke-dashoffset: 1000;
         animation: dash 20s linear forwards;
+        -webkit-animation:dash 20s linear forwards;
+        -moz-animation:dash 20s linear forwards;
+        -o-animation:dash 20s linear forwards;
       }
 
       .maison-1, .maison-2 {
@@ -28,6 +31,21 @@
           stroke-dashoffset: 0;
         }
       }
+      @-webkit-keyframes dash {
+      to {
+                                   stroke-dashoffset: 0;
+                                 }
+                               }
+      @-moz-keyframes dash {
+                              to {
+                                stroke-dashoffset: 0;
+                              }
+                            }
+      @-o-keyframes dash {
+                            to {
+                              stroke-dashoffset: 0;
+                            }
+                          }
     </style>
   </defs>
   <path id="Forme_3" data-name="Forme 3" class="maison-1" d="M3806.76,189.321l-27.26-21.714-27.26,21.714" transform="translate(-3748.705 -162.019)"/>

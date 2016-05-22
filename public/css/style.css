@@ -515,6 +515,9 @@ header a:hover:after{
 .activeCard .icon-pen,
 .activeCard .icon-monitor{
     animation: animationFrames linear 1s infinite;
+    -webkit-animation:animationFrames linear 1s infinite;
+    -moz-animation:animationFrames linear 1s infinite;
+    -o-animation:animationFrames linear 1s infinite;
     transform-origin: 50% 50%;
     -ms-transform-origin: 50% 50%;
     -webkit-transform-origin: 50% 50%;
@@ -833,7 +836,6 @@ header a:hover:after{
     .activeCard .test-tube,
     .activeCard .icon-pen,
     .activeCard .icon-monitor{
-        animation: none;
         transform-origin: 0% 0%;
         -ms-transform-origin:0% 0%;
         -webkit-transform-origin: 0% 0%;
