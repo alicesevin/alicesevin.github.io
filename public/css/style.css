@@ -23,6 +23,8 @@ section{
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     text-align: center;
     width:100%;
 }
@@ -274,6 +276,8 @@ header a:hover:after{
     top: 10%;
     left: 52%;
     transform: translate(-50%,-50%);
+    -ms-transform:translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
 .About .title,
 .Projects .title{
@@ -369,6 +373,8 @@ header a:hover:after{
 #about_competence .time_line>div:nth-child(5)>small:after{
     right: 50%;
     transform: translate(115%);
+    -ms-transform:translate(115%);
+    -webkit-transform: translate(115%);
 }
 .time_line>div:nth-child(2)>small:before,
 .time_line>div:last-child>small:before,
@@ -376,6 +382,8 @@ header a:hover:after{
 #about_competence .time_line>div:nth-child(5)>small:before{
     left: 50%;
     transform: translate(-115%);
+    -ms-transform:translate(-115%);
+    -webkit-transform: translate(-115%);
 }
 #about_competence .time_line {
     width: auto;
@@ -451,6 +459,8 @@ header a:hover:after{
     top: 0;
     left: 50%;
     transform: translate(-50%);
+    -ms-transform:translate(-50%);
+    -webkit-transform: translate(-50%);
 }
 .cardContent {
     position: absolute;
@@ -484,6 +494,8 @@ header a:hover:after{
     position: absolute;
     left: 50%;
     transform: translate(-50%);
+    -ms-transform:translate(-50%);
+    -webkit-transform: translate(-50%);
     margin: -70px 0 0;
     box-shadow: 0 0 21px 6px rgba(0,0,0,0.05);
     height: 300px;
@@ -504,6 +516,8 @@ header a:hover:after{
 .activeCard .icon-monitor{
     animation: animationFrames linear 1s infinite;
     transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
 }
 .Projects .activeCard .cardContent a:hover {
     border-color: #fff;
@@ -650,7 +664,7 @@ header a:hover:after{
     margin-top: 200px;
 }
 /*_____________________________________MEDIAQUERIES____________________________________________*/
-@media screen  and (max-width : 767px), screen  and (max-height : 650px){
+@media screen  and (max-width : 768px), screen  and (max-height : 650px){
     /*TRANSITIONS*/
     .Home,
     .About,
@@ -715,6 +729,8 @@ header a:hover:after{
     section{
         position: static;
         transform: translate(0%, 0%);
+        -ms-transform:translate(0%, 0%);
+        -webkit-transform: translate(0%, 0%);
         margin-top: 120px;
         margin-bottom: 20px;
     }
@@ -783,6 +799,8 @@ header a:hover:after{
     .activeCard{
         position: static;
         transform: translate(0%);
+        -ms-transform:translate(0%);
+        -webkit-transform: translate(0%);
         padding: 30px 15px 20px;
         box-shadow: none;
         height: 240px;
@@ -817,6 +835,8 @@ header a:hover:after{
     .activeCard .icon-monitor{
         animation: none;
         transform-origin: 0% 0%;
+        -ms-transform-origin:0%, 0%;
+        -webkit-transform-origin: 0%, 0%;
     }
     .activeCard .cardInner span{
         width: 80px;
