@@ -835,8 +835,8 @@ header a:hover:after{
     .activeCard .icon-monitor{
         animation: none;
         transform-origin: 0% 0%;
-        -ms-transform-origin:0%, 0%;
-        -webkit-transform-origin: 0%, 0%;
+        -ms-transform-origin:0% 0%;
+        -webkit-transform-origin: 0% 0%;
     }
     .activeCard .cardInner span{
         width: 80px;
@@ -943,16 +943,12 @@ header a:hover:after{
     .Projects header .responsive_nav,
     .Contact header > div,
     .Contact header .responsive_nav {
-        transition: background 0s;
+        transition: none;
     }
-
     .title h2 {
         line-height: 25px;
         max-width: 350px;
         margin: -2px auto 0;
-    }
-    .About .title>div:first-child, .Projects .title>div:first-child, .Contact .title>div:first-child, .Error .title>div:first-child{
-        display:none;
     }
     .Contact .content ul{
         height:310px;
