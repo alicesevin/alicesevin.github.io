@@ -327,9 +327,6 @@ header a:hover:after{
 .about_section>div{
     height: auto;
 }
-.time_line{
-    max-width: 800px;
-}
 .time_line>div {
     display: inline-block;
     margin: 0 7px;
@@ -391,12 +388,13 @@ header a:hover:after{
 #about_competence .time_line {
     width: auto;
     margin: 0 auto;
+    max-width: 800px;
 }
 #about_competence .time_line strong{
     display: block;
 }
 #about_competence .time_line>div{
-    margin: 30px -5px 80px;
+    margin: 30px -5px 40px;
 }
 /*__________________________________Projects__________________________________*/
 .Projects .title h1{

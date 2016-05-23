@@ -180,7 +180,7 @@ $(document).ready(function(){
                         if ($(window).width() <= 768 || $(window).height() <= 650) {
                             top_title = '188px';
                         } else {
-                            top_title = '538px';
+                            top_title = '458px';
                         }
                     } else if (div_show == 'about_professionnel') {
                         top_title = '5px';
@@ -205,7 +205,7 @@ $(document).ready(function(){
                     if($( window ).width()<=768 || $( window ).height()<=650){
                         top_title = '188px';
                     }else {
-                        top_title = '538px';
+                        top_title = '458px';
                     }
                 }else if(div_show == 'about_professionnel'){
                     top_title = '5px';
