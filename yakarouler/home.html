@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yakarouler</title>
+    <!----------------------CSS---------------------->
+    <link href="dist/css/easy-autocomplete.min.css" rel="stylesheet" type="text/css">
+    <link href="dist/css/select2.min.css" rel="stylesheet" type="text/css">
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="dist/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="dist/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="inner">
+    <header>
+        <div class="container">
+            <h1><a href="#" title="Accueil"><img src="dist/images/logo.png" alt="Yakarouler.com"></a></h1>
+            <nav>
+                <ul class="nav_desktop">
+                    <li class="login"><a href="#">Me connecter</a></li>
+                    <li class="card"><a href="#">Panier</a></li>
+                </ul>
+                <ul class="nav_mobile">
+                    <li><a href="#"><img src="dist/images/location-pin.png" alt="Nos Magasins"></a></li>
+                    <li><a href="#"><img src="dist/images/shopping-cart.png" alt="Panier"></a></li>
+                    <li><a href="#"><img src="dist/images/man-user.png" alt="Me connecter"></a></li>
+                </ul>
+            </nav>
+            <!----------------------End Nav----------------------->
+        </div>
+    </header>
+    <!----------------------End Header----------------------->
+    <div class="principal_research">
+        <button id="magic_research_button"></button>
+        <div class="container">
+            <h2>Le spécialiste de la vente de pièces auto à prix discount</h2>
+            <div class="row principal_researchDiv">
+                <div id="principalResearch-values"></div>
+                <div class="principalResearch-filters btn-group" role="group">
+                    <button type="button" id="filterModel">Par modèle</button>
+                    <button type="button" id="filterImmatriculation">Par immatriculation</button>
+                    <button type="button" id="filterCarte">Par carte grise</button>
+                </div>
+                <form id="principal_researchForm">
+                    <input type="text" id="principal_researchInput" placeholder='Entrer un critère...' name='research'>
+                    <div id="principalResearch-questions"></div>
+                    <select class="principalResearch-filters_responsive" name="filters">
+                        <option value="filterModel" disabled="disabled">Filtrer ma recherche...</option>
+                        <option value="filterModel">Par modèle</option>
+                        <option value="filterImmatriculation">Par immatriculation</option>
+                        <option value="filterCarte">Par carte grise</option>
+                    </select>
+                    <button id="principalResearch-submit">Rechercher</button>
+                </form>
+            </div>
+            <!----------------------End Principal_researchDiv---------------------->
+        </div>
+    </div>
+    <!----------------------End Principal_Research---------------------->
+    <div class="magic_research hide_magic">
+        <button id="close_magic_research"></button>
+        <div class="container">
+            <form>
+                <p>
+                            <span>J'ai une
+                                <select name="alternative_research_car" id="alternative_research_car">
+                                    <option value="marque">voiture</option>
+                                    <option value="immatriculation">plaque d'immatriculation</option>
+                                    <option value="carte">carte grise</option>
+                                </select>
+                            </span>
+                            <span>, et je recherche dans la catégorie
+                                <select name="alternative_research_categorie" id="alternative_research_categorie">
+                                    <option value="none">truc muche</option>
+                                    <option value="pieces">Pièces détachées</option>
+                                    <option value="pneus">Pneus & Jantes</option>
+                                    <option value="neige">Chaines à neige</option>
+                                    <option value="batteries">Batteries</option>
+                                    <option value="huiles">Huiles</option>
+                                    <option value="accessoires">Accessoires & Entretien</option>
+                                    <option value="son">Son Tel & Alarmes</option>
+                                    <option value="portage">Attelage & Portage</option>
+                                    <option value="carrosserie">Carrosserie</option>
+                                    <option value="outillage">Outillage</option>
+                                    <option value="moto">Moto</option>
+                                </select>
+                            </span>
+                            <span>, la pièce détachée
+                                <input id="alternative_research_product" type="text" placeholder="chose">
+                            </span>
+                </p>
+                <!----------------------End Magic p---------------------->
+                <button id="magic_research_play">Rechercher</button>
+            </form>
+        </div>
+    </div>
+    <!----------------------End Magic_Research---------------------->
+    <div class="trust_content col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 visible-lg visible-md visible-sm">
+        <ul class="row">
+            <li class="col-xs-6 col-sm-3">
+                <p>Paiement <br>100% sécurisé</p>
+            </li>
+            <li class="col-xs-6 col-sm-3">
+                <p>Livraison express <br>sous 24h</p>
+            </li>
+            <li class="col-xs-6 col-sm-3">
+                <p>Pièces <br>neuves et d'origines</p>
+            </li>
+            <li class="col-xs-6 col-sm-3">
+                <p>Satisfaction Client <br>9,2/10</p>
+            </li>
+        </ul>
+    </div>
+    <!----------------------End Trust_Content---------------------->
+    <div class="products col-lg-12 col-md-12">
+        <div class="container">
+            <div class="title">
+                <h3>Nos produits</h3>
+            </div>
+            <ul class="gallery_categorie">
+                <li><img src="dist/images/carroserie.jpg" alt="Moto"></li>
+                <li><img src="dist/images/volant.jpg" alt="Carrosserie"></li>
+                <li><img src="dist/images/retro.jpg" alt="Outillage"></li>
+                <li><img src="dist/images/moteur.jpg" alt="Son Tel & Alarmes"></li>
+                <li><img src="dist/images/levier.jpg" alt="Accessoires & Entretiens"></li>
+                <li><img src="dist/images/portiere.jpg" alt="Attelage & Portage"></li>
+                <li class="unresponsive"><img src="dist/images/pot-echappement.jpg" alt="Embrayage & boîtes de vitesses"></li>
+                <li class="unresponsive"><img src="dist/images/pieces-detachees.jpg" alt="Huiles"></li>
+                <li class="unresponsive"><img src="dist/images/pneu.jpg" alt="Pneus & Jantes"></li>
+                <li class="unresponsive"><img src="dist/images/krick.jpg" alt="Pièces détachées"></li>
+                <li class="unresponsive"><img src="dist/images/pedale.jpg" alt="Chaînes à neige"></li>
+                <li class="unresponsive"><img src="dist/images/moteur1.jpg" alt="Batteries"></li>
+            </ul>
+            <button class="more_products">. . .</butto
+        </div>
+    </div>
+    <!----------------------End Products---------------------->
+    <div class="map visible-lg visible-md visible-sm">
+        <div class="container">
+            <div class="title">
+                <h3>Magasins et Centres de Montages</h3>
+            </div>
+            <!--Modifier l(image pour rajouter API Google_MAP-->
+            <img src="dist/images/carte.jpg" alt="futureGoogleMap">
+        </div>
+        <div class="adresses">
+            <div class="container">
+                <ul>
+                    <li class="col-lg-4 col-md-4 col-sm-4"><address><strong>Yakarouler Paris</strong>7 rue des Alouettes<br>75006 Paris<span>Ouvert de 8h à 13h</span></address></li>
+                    <li class="col-lg-4 col-md-4 col-sm-4"><address><strong>Yakarouler Paris</strong>7 rue des Alouettes<br>75006 Paris<span>Ouvert de 8h à 13h</span></address></li>
+                    <li class="col-lg-4 col-md-4 col-sm-4"><address><strong>Yakarouler Paris</strong>7 rue des Alouettes<br>75006 Paris<span>Ouvert de 8h à 13h</span></address></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!----------------------End Map---------------------->
+    <footer>
+        <div class="newsletter">
+            <div class="container">
+                <div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-12">
+                    <h3>Inscription à la newsletter</h3>
+                    <form id="newsletter-form">
+                        <input type="text" id="newsletter-input" placeholder='Votre email' name='newsletter'>
+                        <button id="newsletter-submit">OK</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!----------------------End Newsletter---------------------->
+        <div class="footer_nav">
+            <div class="container">
+                <div class="col-md-12 col-lg-12">
+                    <ul class="links_footer">
+                        <li>
+                            <ul>
+                                <li>À propos</li>
+                                <li><a href="">Qui sommes nous ?</a></li>
+                                <li><a href="">Nous contacter</a></li>
+                                <li><a href="">Avis clients</a></li>
+                                <li><a href="">Devenez partenaire</a></li>
+                                <li><a href="">Recrutement</a></li>
+                            </ul>
+                        </li>
+                        <li class="unresponsive">
+                            <ul>
+                                <li>Votre commande</li>
+                                <li><a href="">Paiement</a></li>
+                                <li><a href="">Conditions de livraison / retour</a></li>
+                                <li><a href="">Suivi de commande</a></li>
+                                <li><a href="">Conditions générales de vente</a></li>
+                                <li><a href="">Mentions légales</a></li>
+                                <li><a href="">Confidentialité</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>Aide et services</li>
+                                <li><a href="">Faq et Forum</a></li>
+                                <li><a href="">Tutoriel</a></li>
+                                <li><a href="">Ateliers</a></li>
+                                <li><a href="">Cote Argus</a></li>
+                                <li><a href="">Parrainez vos amis</a></li>
+                            </ul>
+                        </li>
+                        <li class="sociaux">
+                            <ul>
+                                <li class="unresponsive">Suivez-nous</li>
+                                <li><a href=""><img src="dist/images/facebook-logo.png" alt="facebook"><small>Facebook</small></a></li>
+                                <li><a href=""><img src="dist/images/twitter-logo.png" alt="twitter"><small>Twitter</small></a></li>
+                                <li><a href=""><img src="dist/images/social-google-plus-square-button.png" alt="google +"><small>Google +</small></a></li>
+                                <li><a href=""><img src="dist/images/pinterest-logo.png" alt="pinterest"><small>Pinterest</small></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!----------------------End Footer Nav---------------------->
+    </footer>
+    <!----------------------End Footer---------------------->
+</div>
+<!----------------------SCRIPTS---------------------->
+<script src="dist/js/jquery.min.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="dist/js/jquery.easy-autocomplete.min.js"></script>
+<script src="dist/js/select2.full.min.js"></script>
+<script src="dist/js/main.js"></script>
+</body>
+</html>
