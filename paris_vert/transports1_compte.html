@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Paris Vert | Compte</title>
+    <!--BOOTSTRAP-->
+    <link type="text/css" rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="public/bootstrap/css/bootstrap-theme.min.css">
+    <!--RESET-->
+    <link type="text/css" rel="stylesheet" href="public/css/reset.css">
+    <!--STYLESHEETS-->
+    <link type="text/css" rel="stylesheet" href="public/css/fonts.css">
+    <link type="text/css" rel="stylesheet" href="public/css/styles.css">
+</head>
+<body>
+<header>
+    <div class="header_inner">
+        <h1><a href="index.html" title="Accueil"><img class="logo" src="public/images/logo.png" alt="Le Paris Vert"></a>
+        </h1>
+        <a class="connexion_btn" href="index.html" title="Retourner à l'accueil">Home</a>
+    </div>
+</header>
+<section class="header_compte">
+    <div class="comment">
+        <p>Bienvenue chez toi Susan !</p>
+        <small>Il y a du thé et des cookies en fin de page :)</small>
+    </div>
+    <div class="profil">
+        <div class="infos_profil">
+            <img src="public/images/compte_profil_picture.png" alt="profil_picture">
+            <p>Susan Touro</p>
+            <small>Amsterdam, Pays Bas</small>
+        </div>
+        <ul class="ville_profil">
+            <li class="titre_li">Ville/Pays déjà visités</li>
+            <li>Londres</li>
+            <li>Budapest</li>
+            <li>Madrid</li>
+        </ul>
+    </div>
+    <div class="nav_compte col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3">
+        <ul class="row">
+            <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <a href="planning_compte.html">
+                    <img src="public/images/compte_nav_planning.png" alt="planning">Ton planning de vacances<small>Youpi !</small>
+                </a>
+            </li>
+            <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <a href="transports1_compte.html">
+                    <img src="public/images/compte_nav_transports.png" alt="planning">Ta carte des transports<small>Mince je suis où ?</small>
+                </a>
+            </li>
+            <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <a href="hebergement_compte.html">
+                    <img src="public/images/compte_nav_hebergement.png" alt="planning">Ton répertoire d'hébergements<small>Vive les couettes !</small>
+                </a>
+            </li>
+            <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <a href="#">
+                    <img src="public/images/compte_nav_communaute.png" alt="planning">La communauté<small>Des copains !</small>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="principal_content_transports principal_content_compte">
+    <div class="bandeau"></div>
+    <div class="compte_preselect_transports">
+        <ul>
+            <li class="to_paris">
+                <img src="public/images/compte_to_paris.png">
+                <p>Jusqu'à Paris</p>
+            </li>
+            <li class="into_paris">
+                <img src="public/images/compte_into_paris.png">
+                <p>Dans Paris</p>
+            </li>
+        </ul>
+        <div class="arrows">
+            <div class="arrow_up"></div>
+        </div>
+    </div>
+    <div class="compte_interactive_transports container-fluid">
+        <div class="compte_select_place_transports col-lg-3 col-md-3">
+            <div class="select_pays">
+                <label for="pays">Pays de départ</label>
+                <select id="pays" name="pays">
+                    <option>...</option>
+                    <option>France</option>
+                    <option>Espagne</option>
+                    <option>Italie</option>
+                </select>
+            </div>
+            <div class="select_ville">
+                <label for="ville">Ville de départ</label>
+                <input type="text" name="ville" id="ville"/>
+            </div>
+        </div>
+        <div class="compte_select_icones_transports col-lg-9 col-md-9">
+            <p>Séléctionnez votre moyen de transport</p>
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2">
+                <ul class="row">
+                    <li class="avion_button col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-6">Avion</li>
+                    <li class="train_button col-lg-2 col-md-2 col-sm-6">Train</li>
+                    <li class="train_electrique_button col-lg-2 col-md-2 col-sm-6">Train électrique</li>
+                    <li class="bus_button col-lg-2 col-md-2 col-sm-6">Bus</li>
+                    <li class="voiture_button col-lg-2 col-md-2 col-sm-6">Covoiturage</li>
+                </ul>
+            </div>
+        </div>
+        <div class="compte_result_transports col-lg-12 col-md-12">
+            <ul>
+                <li class="li_results_transports compte_transports_avion col-lg-6 col-md-6">
+                    <ul>
+                        <li class="li_transports_heures"><strong>0</strong>heures</li>
+                        <li class="li_transports_co2"><strong>0</strong>co2</li>
+                    </ul>
+                </li>
+                <li class="li_results_transports compte_transports_bus col-lg-6 col-md-6">
+                    <ul>
+                        <li class="li_transports_heures"><strong>0</strong>heures</li>
+                        <li class="li_transports_co2"><strong>0</strong>co2</li>
+                    </ul>
+                </li>
+                <li class="li_results_transports compte_transports_train col-lg-6 col-md-6">
+                    <ul>
+                        <li class="li_transports_heures"><strong>0</strong>heures</li>
+                        <li class="li_transports_co2"><strong>0</strong>co2</li>
+                    </ul>
+                </li>
+                <li class="li_results_transports compte_transports_voiture col-lg-6 col-md-6">
+                    <ul>
+                        <li class="li_transports_heures"><strong>0</strong>heures</li>
+                        <li class="li_transports_co2"><strong>0</strong>co2</li>
+                    </ul>
+                </li>
+                <li class="li_results_transports compte_transports_train_electrique col-lg-6 col-md-6">
+                    <ul>
+                        <li class="li_transports_heures"><strong>0</strong>heures</li>
+                        <li class="li_transports_co2"><strong>0</strong>co2</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="pre_footer_compte">
+    <img src="public/images/compte_cookie.png">
+    <p>Chose promise, chose dûe !<small>Voici le thé et les cookies :)</small></p>
+</section>
+<footer>
+    <div class="container-fluid inner">
+        <ul class="footer_nav">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Team Le Paris vert</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="footer_sociaux">
+            <li><a href="#"><img src="public/images/footer_facebook.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="public/images/footer_snapchat.png" alt="Snapchat"></a></li>
+            <li><a href="#"><img src="public/images/footer_twitter.png" alt="Twitter"></a></li>
+            <li><a href="#"><img src="public/images/footer_insta.png" alt="Instagram"></a></li>
+        </ul>
+        <ul class="footer_contact">
+            <li class="footer_mail">info@leparisvert.com</li>
+            <li class="footer_phone">(+33) 7 59 61 48 43</li>
+            <li class="footer_adress">13 boulevard Fleuri 75012<br>Paris</li>
+        </ul>
+        <small>© 2016 Lélia Tahabik. All Rights Reserved.</small>
+    </div>
+</footer>
+<!--BOOTSTRAP & JQUERY-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script rel="script" type="text/javascript" src="public/bootstrap/js/bootstrap.min.js"></script>
+<script rel="script" type="text/javascript" src="public/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1623 @@
+/*GENERAL*/
+body{
+    background: #f0efeb;
+    box-sizing: border-box;
+    font: normal 14px 'CenturyGothic';
+    line-height: 18px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;
+    cursor : default;
+}
+section{
+    clear: both;
+}
+.titre_section{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.titre_section h2{
+    font-size:40px;
+    font-weight: bold;
+    line-height: 45px;
+}
+.titre_section strong{
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 35px;
+}
+p{
+    color: #000;
+}
+button{
+    outline: none;
+}
+.btn_rounded{
+    border-radius: 30px;
+    box-sizing: border-box;
+    background:#9fc555;
+    border: none;
+    padding:20px 30px;
+    margin-top: 30px;
+}
+.btn_rounded a{
+    color: #fff;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+.container,.container-fluid{
+    max-width: 1420px;
+    margin: 0 auto;
+}
+/*HEADER*/
+header{
+    position: absolute;
+    top:0;
+    z-index: 1000;
+    width:100%;
+}
+.header_inner{
+    position: relative;
+    width:95%;
+    margin: 20px auto;
+}
+.header_inner .logo{
+    width:80px;
+}
+.header_inner .connexion_btn{
+    position: absolute;
+    right:10px;
+    top:10px;
+    color:#fff;
+    font-weight: bold;
+}
+/*ACCUEIL*/
+/*SECTION 1*/
+.description_site{
+    text-align: center;
+    background: url(../images/home_eiffel.jpg) center right no-repeat;
+    background-size: cover;
+    padding: 150px 0 50px;
+    position: relative;
+}
+/*Titre*/
+.description_site .principal_title h2{
+    color: #5fb45b;
+    font-size: 50px;
+}
+.description_site .principal_title strong{
+    color: #9fc455;
+}
+/*Contenu*/
+/*Liste icones*/
+.description_site_contenu{
+    background: rgba(255,255,255,0.8);
+    padding: 50px 0;
+    margin-top: 30px;
+}
+/*LI DETAILS*/
+.description_site_contenu li{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 40px;
+    box-sizing: border-box;
+}
+.description_site_contenu li:before{
+    content: "";
+    width:110px;
+    height:90px;
+    display: block;
+    margin:0 auto 20px;
+}
+.description_site_contenu_li1:before{
+    background: url(../images/home_picto01.png) center center no-repeat;
+    background-size: contain;
+}
+.description_site_contenu_li2:before{
+    background: url(../images/home_picto02.png) center center no-repeat;
+    background-size: contain;
+}
+.description_site_contenu_li3:before{
+    background: url(../images/home_picto03.png) center center no-repeat;
+    background-size: contain;
+}
+.description_site_contenu_li4:before{
+    background: url(../images/home_picto04.png) center center no-repeat;
+    background-size: contain;
+}
+.description_site_contenu_text strong{
+    font-size: 25px;
+    color: #9fc455;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.description_site_contenu_text p{
+    font-size: 18px;
+    font-weight: bold;
+}
+/*CONNEXION*/
+.connexion_form{
+    margin: 50px 0;
+}
+.connexion_form .row>div{
+    padding: 0;
+    width: 320px;
+    float: left;
+    position: relative;
+}
+.connexion_form input{
+    border:none;
+    box-shadow: none;
+    height:60px;
+    padding: 20px 0 20px 50px;
+    font-style: italic;
+    font-weight: normal;
+    width: 100%;
+}
+.connexion_form .row>div:before{
+    content: "";
+    position:absolute;
+    z-index: 30;
+    left:7px;
+    top:12px;
+    width:35px;
+    height:35px;
+
+}
+.connexion_form .row>.inscription_password:before{
+    background: url(../images/inscription_password.png) center center no-repeat;
+    background-size: contain;
+    height:40px;
+}
+.connexion_form .row>.inscription_mail:before{
+    background: url(../images/inscription_mail.png) center center no-repeat;
+    background-size: contain;
+    left:-5px;
+}
+.connexion_form .row>.inscription_username:before{
+    background: url(../images/inscription_login.png) center center no-repeat;
+    background-size: contain;
+}
+.inscription_submit{
+    background: #9fc455;
+    border: none;
+    width:150px;
+    height:60px;
+    color:#fff;
+    font-size: 18px;
+    float: left;
+    margin-left: 30px;
+}
+/*APPEL APPLI*/
+.description_site h3{
+    font-size: 25px;
+    font-weight: bold;
+    color:#fff;
+    line-height: 35px;
+}
+/*Inscription*/
+/*FORM*/
+.close_modal{
+    position: absolute;
+    top:20px;
+    right: 20px;
+    background:#e61359;
+    border: none;
+    border-radius: 40px;
+    width: 35px;
+    padding: 8px 0;
+    outline: none;
+}
+.close_modal small{
+    color: #fff;
+    font-weight: bold;
+}
+.inscription_form{
+    background: #fff;
+    position: absolute;
+    top: 105px;
+    left: 0;
+    margin: 2%;
+    z-index: 2000;
+    padding: 40px 20px 45px 75px;
+    width: 96%;
+    box-sizing: border-box;
+    display: none;
+}
+.inscription_form .btn_rounded {
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px 25px;
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+}
+
+.inscription_form form {
+    position: relative;
+    overflow: hidden;
+}
+.description_site .inscription_form h3{
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: #c61e60;
+}
+.description_site .inscription_form strong{
+    color: #c61e60;
+    padding-bottom: 41px;
+    display: block;
+    font-size: 20px;
+}
+.inscription_form form>ul>li>ul>li:first-child{
+    color: #e61359;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.inscription_form form>ul>li{
+    text-align: left;
+}
+.inscription_form form>ul>li>ul>li{
+    margin: 10px 0;
+}
+.inscription_form form>ul>li:last-child{
+    margin-top: 0;
+}
+.inscription_form label{
+    font-size: 13px;
+    font-weight: bold;
+}
+.inscription_form small{
+    font-size: 13px;
+}
+.inscription_form form>ul>li>ul>li>ul>li,
+.moyen li>small,
+.moyen>ul>li>ul>li,
+.moyen>ul>li>ul,
+.toggle_check small{
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 5px;
+}
+.inscription_form form>ul>li>ul>li>ul{
+    display: inline-block;
+    max-width: 90%;
+}
+.moyen>ul>li>ul>li{
+    margin-bottom: 0;
+}
+.moyen .toggle_check>ul{
+    margin-right: 0;
+}
+.moyen .toggle_check small{
+    margin-right: 10px;
+}
+.inscription_form input[type=checkbox]:not(:checked) + label,
+.inscription_form input[type=checkbox]:checked + label,
+.inscription_form input[type=radio]:not(:checked) + label,
+.inscription_form input[type=radio]:checked + label{
+    position: relative; /* permet de positionner les pseudo-éléments */
+    padding-right: 20px; /* fait un peu d'espace pour notre case à venir */
+    cursor: pointer;    /* affiche un curseur adapté */
+}
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after,
+[type="radio"]:checked + label:after{
+    content: '';
+    position: absolute;
+    right:0; top: 4px;
+    width: 10px; height: 10px; /* dim. de la case */
+    background: #c61f60;
+    border-radius: 10px; /* angles arrondis */
+}
+[type="checkbox"]:checked + label:after,
+[type="radio"]:checked + label:after{
+    background: #5fb35a;
+}
+.inscription_form input[type=checkbox]:not(:checked),
+.inscription_form input[type=checkbox]:checked,
+.inscription_form input[type=radio]:not(:checked),
+.inscription_form input[type=radio]:checked{
+    position: absolute;
+    left: -9999px;
+}
+.toggle_check small,
+.moyen .toggle_check>ul>li,
+.inscription_form form>ul>li>ul>.toggle_check>ul>li{
+    margin-right: 10px;
+}
+.toggle_check li,
+.toggle_check>ul,
+.inscription_form form>ul>li>ul>.moyen>ul>li{
+    display: block;
+}
+.type,.musee,.hotel{
+    max-width: 460px;
+}
+.inscription_form form>ul>li>ul>.type ul,.inscription_form form>ul>li>ul>.musee ul,.inscription_form form>ul>li>ul>.hotel ul{
+    max-width: 88%;
+}
+.interet,.hebergement{
+    /* margin-left: 100px; */
+}
+#pseudo {
+    border: none;
+    outline: none;
+}
+.image_ul{
+    display: inline-block;
+}
+.image_ul:before{
+    content:'';
+    width:40px;
+    height:40px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: baseline;
+}
+.omnivore:before{
+    background: url('../images/inscription_fourchette.png') center center no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+.hotel:before{
+    background: url('../images/inscription_hotel.png') center center no-repeat;
+    background-size: contain;
+}
+.apero:before{
+    background: url('../images/inscription_soleil.png') center center no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+.musee:before{
+    background: url('../images/inscription_ticket.png') center center no-repeat;
+    background-size: contain;
+}
+.maison:before{
+    background: url('../images/inscription_maison.png') center center no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+.type:before{
+    background: url('../images/inscription_bus.png') center center no-repeat;
+    background-size: contain;
+}
+.moyen:before{
+    background: url('../images/inscription_voiture.png') center center no-repeat;
+    background-size: contain;
+}
+.marche:before{
+    background: url('../images/inscription_chaussure.png') center center no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+/*SECTION_2*/
+.decouvrir_application_iphone{
+    position: absolute;
+    top:-70px;
+    left: 60px;
+    width:400px;
+}
+.decouvrir_application{
+    margin-top: 100px;
+    position: relative;
+}
+.decouvrir_application .inner{
+    background: url('../images/home_feuille.jpg') center center no-repeat;
+    background-size: cover;
+}
+/*SECTION_3*/
+.rejoindre_communaute{
+    margin: 40px 0;
+    max-height: 372px;
+    height: auto;
+    overflow: hidden;
+}
+.rejoindre_communaute .rejoindre_communaute_image{
+    background: #fff;
+}
+.rejoindre_communaute .rejoindre_communaute_image img{
+    width: 100%;
+    max-width: 700px;
+    max-height: 100%;
+    float: left;
+}
+.rejoindre_communaute_texte{
+    padding:30px 15px;
+    text-align: center;
+    background: #fff;
+}
+.rejoindre_communaute_texte .titre_section h2{
+    color:#c5215f;
+    max-width: 470px;
+    margin: 0 auto;
+}
+.rejoindre_communaute_texte>p{
+    font-size: 18px;
+    line-height: 24px;
+    font-style: italic;
+    margin: 0 auto;
+    max-width: 460px;
+}
+/*A LA UNE*/
+.a_la_une{
+    margin: 135px 0;
+}
+.a_la_une .titre_section h2{
+    color:#60b45b;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+.a_la_une .titre_section strong{
+    color:#9fc555;
+    font-style: italic;
+    font-weight: normal;
+}
+.a_la_une_galerie{
+    margin: 50px 0;
+}
+.galerie_smoothie_responsive{
+    display: none;
+}
+.a_la_une .btn_rounded{
+    width:320px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    background:#c5215f;
+    border-radius: 15px;
+}
+.a_la_une_galerie ul li{
+    padding: 10px 15px;
+    position: relative;
+    box-sizing: border-box;
+}
+.a_la_une_galerie img{
+    width: 100%;
+}
+/*CARROUSSEL*/
+.le_tout_paris{
+    background: #121111;
+    padding: 65px 0 0;
+}
+.le_tout_paris .inner{
+    padding: 0;
+}
+.le_tout_paris .titre_section h2{
+    color:#e5165a;
+}
+.le_tout_paris .titre_section strong{
+    color:#c4235f;
+}
+.le_tout_paris p{
+    color:#000000;
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: center;
+}
+#carousel-example-generic{
+    background: #5fb35b;
+    margin-top: 40px;
+}
+.carousel-inner{
+    text-align: center;
+}
+.carousel-inner h3,
+.carousel-inner strong,
+.carousel-inner li{
+    color:#fff;
+}
+.carousel-inner li{
+    display: inline-block;
+    margin: 40px 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.carousel-inner li:before{
+    content: '';
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin-bottom: 20px;
+}
+.item_ecologie_electricite:before{
+    background: url(../images/home_electricite.png) center center no-repeat;
+    background-size: contain;
+}
+.item_ecologie_eau:before{
+    background: url(../images/home_eau.png) center center no-repeat;
+    background-size: contain;
+}
+.item_ecologie_tri:before{
+    background: url(../images/home_tri.png) center center no-repeat;
+    background-size: contain;
+}
+.item_ecologie_seine:before{
+    background: url(../images/home_vague.png) center center no-repeat;
+    background-size: contain;
+}
+.item_ecologie h3{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 4px 1px rgba(0,0,0,0.4);
+    line-height: 36px;
+    padding: 45px 0 35px 100px;
+    text-align: left;
+}
+.item_ecologie strong{
+    max-width: 700px;
+    display: block;
+    text-align: left;
+    line-height: 32px;
+    padding-left: 170px;
+}
+/*COMPTE*/
+.header_compte{
+    background: #fff url("../images/compte_background_header.png") center bottom no-repeat;
+    background-size: 1920px;
+    padding: 150px 0 60px;
+    position: relative;
+    width: 100%;
+}
+.header_compte .comment{
+    padding-left: 60px;
+}
+.header_compte .comment>p{
+    color:#fff;
+    font-weight: bold;
+    font-size:20px;
+    margin-bottom: 10px;
+}
+.header_compte .comment>small{
+    color:#fff;
+    font-size:16px;
+}
+.header_compte .profil{
+    float: right;
+    margin-right:30px;
+}
+.header_compte .profil .infos_profil{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header_compte .profil .infos_profil img{
+    width: 80px;
+    margin-bottom: 10px;
+}
+.header_compte .profil .infos_profil p{
+    font-weight: bold;
+    font-size: 18px;
+}
+.header_compte .profil .infos_profil small{
+    font-size:11px;
+}
+.header_compte .profil .ville_profil .titre_li{
+    color:#c5215f;
+}
+.header_compte .profil .ville_profil li{
+    margin: 10px 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+/*Compte_nav*/
+.nav_compte{
+    float: none;
+    clear: both;
+    text-align: center;
+}
+.nav_compte li{
+    text-align: center;
+    opacity: 0.4;
+    transition: opacity 0.3s;
+}
+.nav_compte li a{
+    color:#000;
+    font-weight: bold;
+    font-size: 13px;
+}
+.nav_compte li:hover,
+.nav_compte li.active{
+    opacity: 1;
+}
+.nav_compte li a:hover,
+.nav_compte li.active a{
+    text-decoration: none;
+}
+.nav_compte li small{
+    display: block;
+    font-weight: normal;
+    font-style: italic;
+}
+.nav_compte li img{
+    width: auto;
+    height: auto;
+    max-width: 80px;
+    max-height: 60px;
+    display: block;
+    margin: 0 auto 10px
+}
+/*PRINCIPAL CONTENT*/
+/*Communauté*/
+.convers{
+    background: #fff;
+    margin: 50px 20px;
+    padding: 10px;
+    height: 545px;
+}
+.convers .instantanee,.convers .friends{
+    border: 2px solid #C42460;
+    padding: 0;
+    height: 100%;
+}
+.convers .instantanee strong,.convers .friends strong{
+    background : #C42460;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+.convers .instantanee ul,.convers .friends ul{
+    width: 100%;
+    padding: 10px 20px;
+    height: 350px;
+    overflow: scroll;
+}
+.convers .friends ul{
+    height: 435px;
+}
+.convers .friends li{
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.convers .friends li.connected:after{
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    right: 0;
+    top: 50%;
+    margin-top: -5px;
+    background: #60b45b;
+    position: absolute;
+}
+.convers .friends li img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+}
+.convers .friends li p{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.convers .edit_friends{
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    background:#C42460;
+}
+.convers .edit_friends img:first-child{
+    float: left;
+}
+.convers .edit_friends img:last-child{
+    float: right;
+}
+.convers .instantanee li{
+    margin-bottom: 20px;
+}
+.convers .instantanee li .name_discuss{
+    color:#60b45b;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.convers .instantanee li p{
+    font-size: 12px;
+    margin-left: 10px;
+}
+.convers .edit_discuss{
+    background: #C42460;
+    margin: 5px;
+    padding: 0 5px 2px;
+}
+.convers .edit_discuss_textarea{
+    border: none;
+    width: 100%;
+    height: 80px;
+    outline: none;
+    padding: 10px;
+}
+.convers .central_instantanee{
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+.convers .central_instantanee p{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    color: #60b45b;
+    max-width: 440px;
+    margin: 130px auto 0;
+}
+.convers .central_instantanee .add_friend{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+.convers .central_instantanee .add_friend button{
+    background: #60b45b;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    vertical-align: middle;
+}
+.convers .central_instantanee .add_friend button a {
+    color: #fff;
+}
+.convers .central_instantanee .add_friend button a:hover {
+    text-decoration:none
+}
+.convers .central_instantanee .add_friend label{
+    color: #60b45b;
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+/*Construction*/
+.construction_content{
+    width: 80%;
+    display: block;
+    margin: 50px auto;
+    max-width: 1100px;
+    text-align: center;
+}
+.construction_content #construction_img{
+    width: 50%;
+    margin: 20px auto;
+    display: block;
+    max-width: 700px;
+    min-width: 300px;
+}
+.construction_content strong{
+    font-size: 20px;
+    font-weight: bold;
+}
+.construction_content p{
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 10px;
+}
+.principal_content_construction+section{
+    display: none;
+}
+/*Bandeau*/
+.principal_content_construction .bandeau,.principal_content_communaute .bandeau,.principal_content_transports .bandeau,.principal_content_planning .bandeau,.principal_content_hebergement .bandeau{
+    background: url("../images/compte_feuilles.jpg") top center no-repeat;
+    background-size: 100%;
+    height: 80px;
+    overflow: hidden;
+    width: 100%;
+}
+.principal_content_transports .bandeau+div,.principal_content_planning .bandeau+div,.principal_content_hebergement .bandeau+div{
+    margin-top: 30px;
+}
+/*EMPTY*/
+.principal_content_empty{
+    height:3px;
+    width: 100%;
+    background: #e1d6d3;
+}
+/*Hebergement*/
+#ui-datepicker-div{
+    background: #fff;
+    border: 1px solid #c5215f;
+    padding: 20px;
+}
+.ui-datepicker-calendar thead tr {
+    background: #c5215f;
+}
+.ui-datepicker-calendar thead tr span{
+    color:#fff;
+}
+a.ui-state-default {
+    color: #000;
+}
+.ui-datepicker-calendar thead th {
+    padding: 5px;
+    text-align: center;
+}
+.ui-datepicker-calendar tbody td {
+    padding: 6px;
+}
+a.ui-datepicker-prev.ui-corner-all {
+    display: none;
+}
+
+a.ui-datepicker-next.ui-corner-all {
+    display: none;
+}
+
+.ui-datepicker-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 13px;
+    color:#c5215f;
+}
+.principal_content_hebergement{
+
+}
+.principal_content_hebergement #labels_ecos img{
+    width: 130px;
+    margin-bottom: 10px;
+    border-radius: 70px;
+}
+.principal_content_hebergement .arrows{
+    width: 430px;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+}
+.principal_content_hebergement .arrow_up {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #fff;
+    position: absolute;
+    left: -15%;
+    transition: left 0.8s;
+}
+.compte_interactive_hebergement{
+    background: #fff;
+    padding: 60px 40px 50px;
+    box-sizing: border-box;
+    margin: 0 20px;
+    text-align: center;
+}
+.hebergement_labels{
+    display: none;
+}
+.hebergement_labels_active{
+    display: block;
+}
+/*Labels eco / hebergements */
+.labels_ecos p,
+.labels_hebergement p{
+    font-weight: bold;
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto;
+}
+.labels_ecos strong,
+.labels_hebergement strong{
+    font-weight: bold;
+    color:#60b45b;
+    margin: 30px 0 50px;
+    display: block;
+    font-size: 16px;
+}
+.labels_ecos li,
+.labels_hebergement li{
+    display: inline-block;
+    margin: 0 40px;
+}
+.labels_ecos li img,
+.labels_hebergement li img{
+    width: 100px;
+}
+/*Labels approuves*/
+.labels_approuves .select_labels{
+    overflow: hidden;
+    clear: both;
+    float: none;
+}
+.select_labels div{
+    margin: 20px 0;
+}
+.select_labels .labels_calendar{
+    width: 60px;
+    vertical-align: middle;
+}
+.labels_approuves .select_labels input,.labels_approuves .select_labels select{
+    border: 2px solid #c5215f;
+    background: transparent;
+    padding: 5px 30px 5px 10px;
+    outline: none;
+    width: 200px;
+    box-sizing: border-box;
+}
+.labels_approuves .select_labels label{
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.select_labels div:last-child label{
+    width: 60px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.select_labels_icones{
+    margin: 60px 0 40px;
+    float: none;
+    clear: both;
+    overflow: hidden;
+}
+.select_labels_icones li{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.4s;
+}
+.select_labels_icones li:hover{
+    opacity: 1;
+}
+.select_labels_icones li.active_labels_icone{
+    opacity: 1;
+}
+.select_labels_icones img{
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+/*Label_approuves Resultats*/
+.nav_agenda li{
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+    height: 120px;
+    cursor: pointer;
+}
+.nav_agenda li:before{
+    content:'';
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto 10px;
+}
+.nav_agenda .agenda_expos:before{
+    background: url('../images/agenda_ticket.png') center center no-repeat;
+    background-size: contain;
+}
+.nav_agenda .agenda_balade:before{
+    background: url('../images/agenda_balade.png') center center no-repeat;
+    background-size: contain;
+}
+.nav_agenda .agenda_theatre:before{
+    background: url('../images/agenda_theatre.png') center center no-repeat;
+    background-size: contain;
+}
+.nav_agenda .agenda_concert:before{
+    background: url('../images/agenda_concert.png') center center no-repeat;
+    background-size: contain;
+}
+.nav_agenda .agenda_sport:before{
+    background: url('../images/agenda_sport.png') center center no-repeat;
+    background-size: contain;
+}
+.nav_agenda .agenda_spectacle:before{
+    background: url('../images/agenda_spectacle.png') center center no-repeat;
+    background-size: contain;
+}
+.nav_agenda small{
+    font-weight: normal;
+    font-size: 12px;
+    display: block;
+}
+.agenda_result{
+    background: #fff;
+    padding: 30px 30px 50px;
+    box-sizing: border-box;
+    margin: 0 20px;
+    text-align: center;
+    position: relative;
+}
+.labels_approuves_results{
+    position: relative;
+}
+#datepicker{
+    background: url('../images/calendar.jpg') left center no-repeat;
+    background-size: 50px;
+    border: none;
+    display: inline-block;
+    height: 50px;
+    padding-left: 50px;
+    width: 160px;
+}
+.arrow_hebergement{
+    background: #60b45b;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: relative;
+    margin-top: 35px;
+}
+.arrow_top{
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid #fff;
+    border-left: 10px solid transparent;
+    position: absolute;
+    border-top: 10px solid transparent;
+    top: 5px;
+    left: 15px;
+}
+.arrow_bottom{
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    border-top: 15px solid #fff;
+    top: 20px;
+    left: 15px;
+}
+.agenda_result_scroll,
+.labels_approuves_results_scroll{
+    height: 538px;
+    overflow: hidden;
+}
+.agenda_result_scroll{
+    height: 1000px;
+}
+.agenda_result li:nth-child(2n+2),
+.labels_approuves_results  li:nth-child(2n+2){
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+.agenda_result li:nth-child(2n+2){
+    margin-bottom: -40px;
+}
+.agenda_result li img,
+.labels_approuves_results li img{
+    width: 100%;
+}
+.agenda_result .hebergement_image,
+.labels_approuves_results .hebergement_image{
+    max-height: 320px;
+    overflow: hidden;
+}
+.agenda_result .hebergement_text,
+.labels_approuves_results .hebergement_text{
+    height: 180px;
+    position: relative;
+    background: #c5215f;
+    padding: 20px 0;
+    margin-top: -4px;
+    text-align: center;
+}
+.agenda_result .hebergement_text{
+    height: 230px;
+}
+.agenda_result .hebergement_text strong,
+.labels_approuves_results .hebergement_text strong{
+    color: #fff;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 24px;
+}
+.agenda_result .hebergement_text p,
+.labels_approuves_results .hebergement_text p{
+    color: rgba(255, 255, 255, 0.57);
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+}
+.agenda_result  li:nth-child(2n+2) .hebergement_text,
+.labels_approuves_results  li:nth-child(2n+2) .hebergement_text{
+    background: #e5165a;
+}
+/*TRANSPORTS*/
+/*Preselect*/
+.principal_content_transports .arrows{
+    width: 180px;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+}
+.principal_content_transports .arrow_up {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #fff;
+    position: absolute;
+    left: 100%;
+    transition: left 0.6s;
+}
+.compte_preselect_transports{
+    position: relative;
+}
+.compte_preselect_transports ul{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.compte_preselect_transports li{
+    display: inline-block;
+    text-align: center;
+    margin: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.compte_preselect_transports li img{
+    width: 200px;
+}
+/*Interactive*/
+.compte_interactive_transports{
+    background: #fff;
+    padding: 60px 40px 75px;
+    box-sizing: border-box;
+    margin: 0 20px;
+    text-align: center;
+}
+.compte_select_place_transports label{
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.compte_select_icones_transports{
+    text-align: center;
+}
+.compte_select_icones_transports li:before{
+    content: '';
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+}
+.avion_button:before{
+    background: url("../images/compte_transports_avion.jpg") center center no-repeat;
+    background-size: contain;
+}
+.train_button:before{
+    background: url("../images/compte_transports_train.jpg") center center no-repeat;
+    background-size: contain;
+}
+.bus_button:before{
+    background: url("../images/compte_transports_bus.jpg") center center no-repeat;
+    background-size: contain;
+}
+.train_electrique_button:before{
+    background: url("../images/compte_transports_train_electrique.jpg") center center no-repeat;
+    background-size: contain;
+}
+.voiture_button:before{
+    background: url("../images/compte_transports_voiture.jpg") center center no-repeat;
+    background-size: contain;
+}
+.velib_button:before{
+    background: url("../images/compte_transports_velo.jpg") center center no-repeat;
+    background-size: contain;
+}
+.apied_button:before{
+    background: url("../images/compte_transports_pied.jpg") center center no-repeat;
+    background-size: contain;
+}
+.compte_select_icones_transports p{
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+.compte_select_place_transports input,.compte_select_place_transports select{
+    border: 2px solid #c5215f;
+    background: transparent;
+    padding: 5px 30px 5px 10px;
+    outline: none;
+    width: 200px;
+    box-sizing: border-box;
+}
+.compte_select_place_transports select{
+    height: 35px;
+}
+.select_ville{
+    margin-top: 40px;
+}
+.compte_select_icones_transports li{
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+}
+.compte_result_transports{
+    margin-top: 50px;
+}
+.li_results_transports li{
+    display: inline-block;
+}
+.li_transports_heures{
+    color: #60b45b;
+    font-weight: bold;
+}
+.li_transports_heures strong{
+    color: #9fc555;
+    font-size: 40px;
+    margin-right: 5px;
+    vertical-align: super;
+}
+.li_transports_co2{
+    color: #60b45b;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.li_transports_co2 strong{
+    color: #c5215f;
+    font-size: 40px;
+    margin-right: 5px;
+    vertical-align: super;
+}
+.compte_result_transports li{
+    margin-top: 30px;
+}
+.compte_result_transports .li_transports_co2{
+    margin-left: 70px;
+}
+.compte_result_transports li:before{
+    content: '';
+    width: 60px;
+    height: 60px;
+    margin-right: 30px;
+    vertical-align: middle;
+}
+.compte_result_transports ul{
+    display: inline-block;
+}
+.compte_transports_avion:before{
+    background: url("../images/compte_transports_avion.jpg") center center no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+.compte_transports_train:before{
+    background: url("../images/compte_transports_train.jpg") center center no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+.compte_transports_bus:before{
+    background: url("../images/compte_transports_bus.jpg") center center no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+.compte_transports_train_electrique:before{
+    background: url("../images/compte_transports_train_electrique.jpg") center center no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+.compte_transports_voiture:before{
+    background: url("../images/compte_transports_voiture.jpg") center center no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+.compte_transports_velib:before{
+    background: url("../images/compte_transports_velo.jpg") center center no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+.compte_transports_apied:before{
+    background: url("../images/compte_transports_pied.jpg") center center no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+.compte_select_icones_transports p{
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+.transports_active{
+    display: block;
+}
+.transports_unactive{
+    display: none;
+}
+/*Planning*/
+.principal_content_planning{
+
+}
+.principal_content_planning button{
+    background: #60b45b;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    vertical-align: middle;
+}
+.principal_content_planning label{
+    color: #60b45b;
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.compte_add_planning{
+    text-align: center;
+    margin: 50px 0;
+}
+.compte_add_planning div{
+    display: inline-block;
+    margin: 0 40px;
+}
+.compte_select_planning{
+    display: none;
+}
+.compte_select_planning div{
+    text-align: center;
+}
+.compte_select_planning label{
+    display: block;
+    color: #000;
+    margin-bottom: 10px;
+}
+.compte_select_planning input,.compte_select_planning select{
+    border: 2px solid #c5215f;
+    background: transparent;
+    padding: 2px 30px 2px 10px;
+    outline: none;
+    width: 200px;
+    box-sizing: border-box;
+}
+.compte_select_planning select{
+    height: 30px;
+}
+.compte_result_planning{
+    background: #fff;
+    margin: 50px 20px 0;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.compte_result_planning_table{
+    width: 100%;
+    min-width: 900px;
+    overflow: scroll;
+}
+.compte_result_planning .arrow_planning{
+    position: absolute;
+    right: 20px;
+    top:50%;
+    margin-top: -100px;
+    z-index: 100;
+}
+.arrow_right{
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    position: absolute;
+    border-top: 10px solid transparent;
+    top: 10px;
+    left: 15px;
+}
+.arrow_left{
+    width: 0;
+    height: 0;
+    border-right: 15px solid #fff;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    border-top: 10px solid transparent;
+    top: 10px;
+    left: 0px;
+}
+.principal_content_planning button a {
+    color: #fff;
+}
+.edit .edit_text{
+    z-index: 6;
+    display: block;
+}
+.edit_text{
+    width: 98%;
+    height: 104px;
+    padding-left: 10px;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+.edit_text textarea{
+    width:100%;
+    height:100%;
+    border: none;
+    outline: none;
+}
+.edit_text button{
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.show_text{
+    width: 98%;
+    height: 104px;
+    padding-left: 10px;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    z-index: 5;
+    text-align: center;
+}
+.show_text p {
+    width: auto;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+.principal_content_planning button a:hover {
+    text-decoration: none;
+}
+.compte_result_planning table{
+    width: 100%;
+}
+.compte_result_planning td,.compte_result_planning th{
+    width: auto;
+    padding: 15px;
+    border-left: 2px dashed #9fc555;
+    height: 120px;
+    vertical-align: middle;
+    position: relative;
+}
+.compte_result_planning td:first-child,.compte_result_planning th:first-child{
+    border-left: none;
+    width: 6%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #e5165a;
+    padding-right: 30px;
+}
+.compte_result_planning tr{
+    border-bottom: 2px dashed #9fc555;
+}
+.compte_result_planning tr:last-child{
+    border-bottom: none;
+}
+.compte_result_planning th{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #e5165a;
+    height: 50px;
+}
+.compte_add_planning_voyageur{
+    text-align: center;
+    margin: 50px auto 20px;
+}
+.compte_add_planning_voyageur label{
+    text-align: left;
+    max-width: 200px;
+}
+/*FAQ*/
+.faq{
+    text-align: center;
+}
+.faq li{
+    margin-top: 30px;
+    text-align: left;
+    max-width: 600px;
+    width: 90%;
+}
+.faq li strong{
+    color: #5fb35a;
+    font-weight: bold;
+    font-size: 20px;
+    word-wrap: break-word;
+}
+.faq li p{
+    color: #9fc454;
+    font-style: italic;
+    font-size: 16px;
+}
+/*pref_footer*/
+.pre_footer_compte{
+    text-align: center;
+}
+.pre_footer_compte img{
+    width:140px;
+    margin: 80px 0 20px;
+}
+.pre_footer_compte p{
+    font-weight: bold;
+    font-size: 16px;
+}
+.pre_footer_compte p>small{
+    font-weight: normal;
+    font-style: italic;
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+}
+/*FOOTER*/
+footer{
+    color: #fff;
+    text-align: center;
+    background: url("../images/footer.png") top center no-repeat;
+    background-size: cover;
+    padding-top: 110px;
+    margin-top: 0;
+}
+footer li{
+    display: inline-block;
+    margin: 0 15px;
+    vertical-align: top;
+    text-align: left;
+}
+footer ul{
+    margin: 40px 0;
+}
+.footer_nav a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+.footer_sociaux{
+    margin-bottom: 50px;
+}
+.footer_sociaux img{
+    width: 35px;
+}
+.footer_contact li{
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    vertical-align: top;
+    margin: 0 30px;
+}
+.footer_contact li:before{
+    content: '';
+    width: 25px;
+    height: 40px;
+    display: block;
+    float: left;
+    padding-bottom: 10px;
+    margin:-10px 10px 0 0;
+}
+.footer_mail:before{
+    background: url(../images/footer_mail.png) center center no-repeat;
+    background-size: contain;
+}
+.footer_phone:before{
+    background: url(../images/footer_phone.png) center center no-repeat;
+    background-size: contain;
+}
+.footer_adress:before{
+    background: url(../images/footer_adress.png) center center no-repeat;
+    background-size: contain;
+}
+footer small{
+    font-size: 12px;
+    margin-bottom: 20px;
+    display: block;
+}

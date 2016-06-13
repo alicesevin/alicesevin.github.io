@@ -1,0 +1,24 @@
+@font-face {
+    font-family:"CenturyGothic";
+    src:url("../fonts/CenturyGothicBold.ttf");
+    font-weight:bold;
+    font-style:normal;
+}
+@font-face {
+    font-family:"CenturyGothic";
+    src:url("../fonts/CenturyGothicBoldItalic.ttf");
+    font-weight:bold;
+    font-style:italic;
+}
+@font-face {
+    font-family:"CenturyGothic";
+    src:url("../fonts/CenturyGothicRegular.ttf");
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family:"CenturyGothic";
+    src:url("../fonts/CenturyGothicItalic.ttf");
+    font-weight:normal;
+    font-style:italic;
+}

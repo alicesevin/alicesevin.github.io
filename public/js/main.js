@@ -80,7 +80,7 @@ $(document).ready(function(){
             }else{
                 $('#next').attr('href', '#accueil');
             }
-            $('.' + actualPageClass).find('#sectionAdd').load(content).delay(200).fadeIn(400);
+            $('#sectionAdd').load(content).delay(200).fadeIn(400);
         });
     };
     /*verify if hash is set else define it*/
