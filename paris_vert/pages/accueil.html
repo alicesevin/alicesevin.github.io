@@ -2,7 +2,7 @@
     <div class="header_inner">
         <h1><a href="#index" title="Accueil"><img class="logo" src="public/images/logo.png" alt="Le Paris Vert"></a>
         </h1>
-        <a class="connexion_btn" href="#compte" title="Se connecter à compte son compte">Connexion</a>
+        <a class="connexion_btn open_modal open_connexion" href="#compte" title="Se connecter à compte son compte">Connexion</a>
     </div>
 </header>
 <section class="description_site">
@@ -42,12 +42,12 @@
                 <div class="inscription_password">
                     <input type="text" placeholder="password" name="password">
                 </div>
-                <button class="inscription_submit open_modal" type="submit">Sign in</button>
+                <button class="inscription_submit open_modal open_inscription" type="submit">Sign up</button>
             </form>
         </div>
         <div class="modal_window inscription_form col-lg-12">
             <div>
-                <button class="close_modal">
+                <button class="close_modal close_inscription">
                     <small>X</small>
                 </button>
                 <h3>Inscription</h3>
@@ -266,8 +266,23 @@
                             </ul>
                         </li>
                     </ul>
-                    <button class="btn_rounded" type="submit">Inscription</button>
+                    <button class="btn_rounded sign-up" type="submit">Inscription</button>
                 </form>
+            </div>
+        </div>
+        <div class="modal_connexion">
+            <div>
+                <button class="close_modal close_connexion">
+                    <small>X</small>
+                </button>
+                <strong>Merci, veuillez-vous connecter !</strong>
+                <div class="inscription_username">
+                    <input type="text" placeholder="username" name="name_connexion">
+                </div>
+                <div class="inscription_password">
+                    <input type="text" placeholder="password" name="password_connexion">
+                </div>
+                <button class="inscription_submit go-compte" type="submit">Connexion</button>
             </div>
         </div>
         <h3 class="col-lg-12">Et avec votre compte personnel sur le Paris vert,<br>vous pouvez télécharger notre

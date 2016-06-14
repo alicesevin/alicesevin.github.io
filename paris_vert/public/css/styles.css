@@ -1,4 +1,18 @@
 /*GENERAL*/
+.instantane_coeur{
+    width:25px;
+}
+.error{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    width: 70%;
+}
 body{
     background: #f0efeb;
     box-sizing: border-box;
@@ -10,6 +24,7 @@ body{
     -ms-user-select: none;       /* Internet Explorer/Edge */
     user-select: none;
     cursor : default;
+    overflow-x: hidden;
 }
 section{
     clear: both;
@@ -49,7 +64,7 @@ button{
     text-transform: uppercase;
 }
 .container,.container-fluid{
-    max-width: 1420px;
+    max-width: 1800px;
     margin: 0 auto;
 }
 /*HEADER*/
@@ -75,6 +90,45 @@ header{
     font-weight: bold;
 }
 /*ACCUEIL*/
+.modal_connexion{
+    position: absolute;
+    width: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+.modal_connexion>div{
+    background: #fff;
+    padding: 120px 80px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+.modal_connexion>div>div{
+    margin: 20px;
+    display: inline-block;
+}
+.modal_connexion>div>div>input{
+    border: 2px solid #c5215f;
+    background: transparent;
+    padding: 5px 30px 5px 10px;
+    outline: none;
+    width: 200px;
+    box-sizing: border-box;
+    height:40px
+}
+.modal_connexion>div>strong{
+    color: #c61e60;
+    padding-bottom: 41px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+.modal_connexion>div .go-compte{
+    float: none;
+    margin: 30px auto 0;
+    display: block;
+}
 /*SECTION 1*/
 .description_site{
     text-align: center;
@@ -158,6 +212,7 @@ header{
     font-style: italic;
     font-weight: normal;
     width: 100%;
+    outline: none;
 }
 .connexion_form .row>div:before{
     content: "";
@@ -305,9 +360,9 @@ header{
 .inscription_form input[type=checkbox]:checked + label,
 .inscription_form input[type=radio]:not(:checked) + label,
 .inscription_form input[type=radio]:checked + label{
-    position: relative; /* permet de positionner les pseudo-éléments */
-    padding-right: 20px; /* fait un peu d'espace pour notre case à venir */
-    cursor: pointer;    /* affiche un curseur adapté */
+    position: relative; /* permet de positionner les pseudo-Ã©lÃ©ments */
+    padding-right: 20px; /* fait un peu d'espace pour notre case Ã  venir */
+    cursor: pointer;    /* affiche un curseur adaptÃ© */
 }
 [type="checkbox"]:not(:checked) + label:after,
 [type="checkbox"]:checked + label:after,
@@ -610,6 +665,12 @@ header{
     font-size: 12px;
     font-weight: bold;
 }
+.header_compte .profil .ville_profil {
+    height: 60px;
+}
+.appened{
+    display: none;
+}
 /*Compte_nav*/
 .nav_compte{
     float: none;
@@ -620,6 +681,7 @@ header{
     text-align: center;
     opacity: 0.4;
     transition: opacity 0.3s;
+    height: 120px;
 }
 .nav_compte li a{
     color:#000;
@@ -648,7 +710,7 @@ header{
     margin: 0 auto 10px
 }
 /*PRINCIPAL CONTENT*/
-/*Communauté*/
+/*CommunautÃ©*/
 .convers{
     background: #fff;
     margin: 50px 20px;
@@ -673,7 +735,7 @@ header{
     width: 100%;
     padding: 10px 20px;
     height: 350px;
-    overflow: scroll;
+    overflow: hidden;
 }
 .convers .friends ul{
     height: 435px;
@@ -720,6 +782,10 @@ header{
 }
 .convers .instantanee li{
     margin-bottom: 20px;
+    display:none;
+}
+.convers .instantanee .shown_li{
+    display:block
 }
 .convers .instantanee li .name_discuss{
     color:#60b45b;
@@ -1088,11 +1154,11 @@ a.ui-datepicker-next.ui-corner-all {
 }
 .agenda_result li:nth-child(2n+2),
 .labels_approuves_results  li:nth-child(2n+2){
-    margin-top: 80px;
-    margin-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 60px;
 }
 .agenda_result li:nth-child(2n+2){
-    margin-bottom: -40px;
+    padding-bottom: -40px;
 }
 .agenda_result li img,
 .labels_approuves_results li img{
@@ -1206,7 +1272,7 @@ a.ui-datepicker-next.ui-corner-all {
     background: url("../images/compte_transports_bus.jpg") center center no-repeat;
     background-size: contain;
 }
-.train_electrique_button:before{
+.trainElectrique_button:before{
     background: url("../images/compte_transports_train_electrique.jpg") center center no-repeat;
     background-size: contain;
 }
@@ -1277,16 +1343,16 @@ a.ui-datepicker-next.ui-corner-all {
     margin-top: 30px;
 }
 .compte_result_transports .li_transports_co2{
-    margin-left: 70px;
+    margin-left: 35px;
 }
 .compte_result_transports li:before{
     content: '';
     width: 60px;
     height: 60px;
-    margin-right: 30px;
+    margin-right: 20px;
     vertical-align: middle;
 }
-.compte_result_transports ul{
+.compte_result_transports ul ul{
     display: inline-block;
 }
 .compte_transports_avion:before{
@@ -1304,7 +1370,7 @@ a.ui-datepicker-next.ui-corner-all {
     background-size: contain;
     display: inline-block;
 }
-.compte_transports_train_electrique:before{
+.compte_transports_trainElectrique:before{
     background: url("../images/compte_transports_train_electrique.jpg") center center no-repeat;
     background-size: contain;
     display: inline-block;
@@ -1620,4 +1686,116 @@ footer small{
     font-size: 12px;
     margin-bottom: 20px;
     display: block;
+}
+.compte_select_icones_transports li.active_transport,
+.compte_select_icones_transports li:hover{
+    opacity: 1;
+}
+.compte_select_icones_transports li{
+    opacity: 0.4;
+    transition: opacity 0.6s;
+}
+.li_results_transports{
+    display: none;
+}
+section.header_agenda {
+    padding: 160px 0 70px;
+    background: #000;
+    margin-bottom: 40px;
+}
+
+.header_agenda .comment {
+    margin-left: 80px;
+    color: #fff;
+}
+.header_agenda .comment p{
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+}
+.agenda_result .hebergement_text strong small, .labels_approuves_results .hebergement_text strong small{
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: italic;
+}
+.agenda_result .hebergement_text p, .labels_approuves_results .hebergement_text p{
+    text-transform: uppercase;
+}
+.nav_agenda li{
+    opacity: 0.4;
+    transition: opacity 0.4s;
+}
+.nav_agenda li.active_agenda,
+.nav_agenda li:hover{
+    opacity: 1;
+}
+.filter_unactive{
+    display: none;
+}
+@media screen and (max-width: 992px){
+    .compte_result_transports li:before{
+        width: 50px;
+        height: 50px;
+    }
+    .li_transports_co2 strong,
+    .li_transports_heures strong{
+        font-size: 32px;
+    }
+    .agenda_result_scroll{
+        height: 630px;
+    }
+    .header_compte{
+        background-size: 1080px;
+        background-position: center top;
+        clear: both;
+        overflow: hidden;
+    }
+    .nav_compte{
+        float: left;
+        margin-top: -100px;
+    }
+    .nav_compte li{
+        margin-top: 20px;
+    }
+    .header_compte .profil .ville_profil {
+        text-align: right;
+    }
+    .compte_preselect_transports li img{
+        width: 180px;
+    }
+    .principal_content_hebergement #labels_ecos img{
+        width: 110px;
+    }
+    .select_labels_icones img{
+        width: 95px;
+    }
+    .agenda_result .hebergement_text,
+    .labels_approuves_results .hebergement_text{
+        max-width: 250px;
+        margin: -4px auto;
+    }
+    .agenda_result .hebergement_image,
+    .labels_approuves_results .hebergement_image{
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    .compte_select_place_transports div{
+        display: inline-block;
+        margin: 0 20px 40px;
+    }
+    .compte_select_icones_transports li{
+        margin-bottom: 15px;
+    }
+    .compte_result_transports{
+        margin-top: 20px;
+    }
+    .compte_result_transports li:before{
+        margin-right: 9px;
+    }
+    .compte_result_transports .li_transports_co2{
+        margin-left: 30px;
+    }
+    .arrow_hebergement{}
 }
