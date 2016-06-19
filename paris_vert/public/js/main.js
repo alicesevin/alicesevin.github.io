@@ -1,7 +1,7 @@
 $(document).ready(function(){
     if($(window).width()>=768) {
         $(window).resize(function(){
-            if($(window).width()<768){
+            if($(window).width()<767){
                 $('body,html,.content').css('height','100%');
                 $('.content')
                     .html('<p class="error">Votre écran est trop petit,<br>agrandissez et rechargez la page<br>ou changez de support !</p>')

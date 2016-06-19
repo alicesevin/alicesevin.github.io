@@ -1,4 +1,7 @@
 /*GENERAL*/
+.content {
+    background: #f0efeb;
+}
 .instantane_coeur{
     width:25px;
 }
@@ -6,6 +9,10 @@
     position: absolute;
     top:50%;
     left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     font-size: 22px;
     font-weight: bold;
@@ -14,7 +21,7 @@
     width: 70%;
 }
 body{
-    background: #f0efeb;
+    background: #fff;
     box-sizing: border-box;
     font: normal 14px 'CenturyGothic';
     line-height: 18px;
@@ -49,6 +56,10 @@ p{
 button{
     outline: none;
 }
+.row{
+    padding: 0;
+    margin: 0;
+}
 .btn_rounded{
     border-radius: 30px;
     box-sizing: border-box;
@@ -64,8 +75,13 @@ button{
     text-transform: uppercase;
 }
 .container,.container-fluid{
-    max-width: 1800px;
+    max-width: 1600px;
     margin: 0 auto;
+    position: relative;
+    padding: 0;
+}
+.inner.container {
+    width: 90%;
 }
 /*HEADER*/
 header{
@@ -94,7 +110,11 @@ header{
     position: absolute;
     width: 85%;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);;
+    -moz-transform: translateX(-50%);;
+    -ms-transform: translateX(-50%);;
+    -o-transform: translateX(-50%);;
+    transform: translateX(-50%);;
     display: none;
 }
 .modal_connexion>div{
@@ -155,15 +175,16 @@ header{
 /*LI DETAILS*/
 .description_site_contenu li{
     display: inline-block;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
-    margin: 0 0 40px;
+    margin: 0 0 40px 0;
     box-sizing: border-box;
+    padding: 0;
 }
 .description_site_contenu li:before{
     content: "";
-    width:110px;
-    height:90px;
+    width: 100px;
+    height: 78px;
     display: block;
     margin:0 auto 20px;
 }
@@ -196,11 +217,12 @@ header{
 }
 /*CONNEXION*/
 .connexion_form{
-    margin: 50px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .connexion_form .row>div{
     padding: 0;
-    width: 320px;
+    width: 27.5%;
     float: left;
     position: relative;
 }
@@ -276,13 +298,18 @@ header{
     background: #fff;
     position: absolute;
     top: 105px;
-    left: 0;
-    margin: 2%;
+    left: 50%;
     z-index: 2000;
     padding: 40px 20px 45px 75px;
     width: 96%;
     box-sizing: border-box;
     display: none;
+    max-width: 1170px;
+    -webkit-transform:translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 .inscription_form .btn_rounded {
     border-radius: 10px;
@@ -459,12 +486,12 @@ header{
 /*SECTION_2*/
 .decouvrir_application_iphone{
     position: absolute;
-    top:-70px;
-    left: 60px;
-    width:400px;
+    top: -36px;
+    left: 39px;
+    width: 384px;
 }
 .decouvrir_application{
-    margin-top: 100px;
+    margin: 60px auto;
     position: relative;
 }
 .decouvrir_application .inner{
@@ -473,24 +500,32 @@ header{
 }
 /*SECTION_3*/
 .rejoindre_communaute{
-    margin: 40px 0;
+    margin: 40px auto;
     max-height: 372px;
     height: auto;
     overflow: hidden;
+    width: 97%;
 }
 .rejoindre_communaute .rejoindre_communaute_image{
-    background: #fff;
+    width: 50%;
+    float: left;
+    text-align: center;
+    overflow: hidden;
 }
 .rejoindre_communaute .rejoindre_communaute_image img{
-    width: 100%;
-    max-width: 700px;
-    max-height: 100%;
-    float: left;
+    /* width: 100%; */
+    max-width: 690px;
+    min-height: 372px;
+    float: right;
+    /* padding: 34px; */
+    margin: 0 auto;
 }
 .rejoindre_communaute_texte{
-    padding:30px 15px;
+    padding: 30px 15px;
     text-align: center;
     background: #fff;
+    width: 50%;
+    float: right;
 }
 .rejoindre_communaute_texte .titre_section h2{
     color:#c5215f;
@@ -498,7 +533,7 @@ header{
     margin: 0 auto;
 }
 .rejoindre_communaute_texte>p{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     font-style: italic;
     margin: 0 auto;
@@ -506,7 +541,7 @@ header{
 }
 /*A LA UNE*/
 .a_la_une{
-    margin: 135px 0;
+    margin: 100px 0;
 }
 .a_la_une .titre_section h2{
     color:#60b45b;
@@ -520,9 +555,6 @@ header{
 }
 .a_la_une_galerie{
     margin: 50px 0;
-}
-.galerie_smoothie_responsive{
-    display: none;
 }
 .a_la_une .btn_rounded{
     width:320px;
@@ -680,6 +712,10 @@ header{
 .nav_compte li{
     text-align: center;
     opacity: 0.4;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
     transition: opacity 0.3s;
     height: 120px;
 }
@@ -954,14 +990,20 @@ a.ui-datepicker-next.ui-corner-all {
     border-bottom: 30px solid #fff;
     position: absolute;
     left: -15%;
+    -webkit-transition: left 0.8s;
+    -moz-transition: left 0.8s;
+    -ms-transition: left 0.8s;
+    -o-transition: left 0.8s;
     transition: left 0.8s;
 }
 .compte_interactive_hebergement{
     background: #fff;
     padding: 60px 40px 50px;
     box-sizing: border-box;
-    margin: 0 20px;
+    margin: 0 auto;
     text-align: center;
+    width: 90%;
+    max-width: 1200px;
 }
 .hebergement_labels{
     display: none;
@@ -1035,6 +1077,10 @@ a.ui-datepicker-next.ui-corner-all {
 .select_labels_icones li{
     cursor: pointer;
     opacity: 0.5;
+    -webkit-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    -ms-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
     transition: opacity 0.4s;
 }
 .select_labels_icones li:hover{
@@ -1217,6 +1263,10 @@ a.ui-datepicker-next.ui-corner-all {
     border-bottom: 30px solid #fff;
     position: absolute;
     left: 100%;
+    -webkit-transition: left 0.6s;
+    -moz-transition: left 0.6s;
+    -ms-transition: left 0.6s;
+    -o-transition: left 0.6s;
     transition: left 0.6s;
 }
 .compte_preselect_transports{
@@ -1241,8 +1291,10 @@ a.ui-datepicker-next.ui-corner-all {
     background: #fff;
     padding: 60px 40px 75px;
     box-sizing: border-box;
-    margin: 0 20px;
+    margin: 0 auto;
     text-align: center;
+    max-width: 1200px;
+    width: 95%;
 }
 .compte_select_place_transports label{
     display: block;
@@ -1535,6 +1587,10 @@ a.ui-datepicker-next.ui-corner-all {
 }
 .show_text p {
     width: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     position: absolute;
     top: 50%;
@@ -1609,10 +1665,11 @@ a.ui-datepicker-next.ui-corner-all {
 /*pref_footer*/
 .pre_footer_compte{
     text-align: center;
+    margin-top: 30px;
 }
 .pre_footer_compte img{
     width:140px;
-    margin: 80px 0 20px;
+    margin: 20px 0;
 }
 .pre_footer_compte p{
     font-weight: bold;
@@ -1629,10 +1686,9 @@ a.ui-datepicker-next.ui-corner-all {
 footer{
     color: #fff;
     text-align: center;
-    background: url("../images/footer.png") top center no-repeat;
-    background-size: cover;
-    padding-top: 110px;
-    margin-top: 0;
+    background: url("../images/footer.jpg") center center no-repeat;
+    background-size: 100%;
+    margin-top: 50px;
 }
 footer li{
     display: inline-block;
@@ -1641,23 +1697,23 @@ footer li{
     text-align: left;
 }
 footer ul{
-    margin: 40px 0;
+    margin: 25px 0;
 }
 .footer_nav a{
     color: #fff;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
 }
 .footer_sociaux{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .footer_sociaux img{
-    width: 35px;
+    width: 30px;
 }
 .footer_contact li{
     color: #fff;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     vertical-align: top;
     margin: 0 30px;
 }
@@ -1693,6 +1749,10 @@ footer small{
 }
 .compte_select_icones_transports li{
     opacity: 0.4;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    -ms-transition: opacity 0.6s;
+    -o-transition: opacity 0.6s;
     transition: opacity 0.6s;
 }
 .li_results_transports{
@@ -1725,6 +1785,10 @@ section.header_agenda {
 }
 .nav_agenda li{
     opacity: 0.4;
+    -webkit-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    -ms-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
     transition: opacity 0.4s;
 }
 .nav_agenda li.active_agenda,
@@ -1734,7 +1798,172 @@ section.header_agenda {
 .filter_unactive{
     display: none;
 }
+.decouvrir_application_texte{
+    width: 63%;
+    float: right;
+    text-align: center;
+    margin: 40px 15px 40px 0;
+}
+ul.icones_appli li {
+    display: inline-block;
+    margin: 10px 13px;
+}
+
+.icones_appli li img {
+    width: 50px;
+}
+li.galerie_right.col-md-6.col-lg-4.col-sm-6 {
+    max-width: 372px;
+    /* padding: 10px 0; */
+    padding-right: 0;
+}
+.decouvrir_application_texte .titre_section h2{
+    color: #fff;
+    font-size: 24px;
+    line-height: 27px;
+    max-width: 100%;
+}
+.decouvrir_application_texte .titre_section strong {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 4px;
+    display: block;
+    font-style: italic;
+}
+.decouvrir_application_texte p {
+    font-size: 14px;
+    color: #d6d6d6;
+    margin: 30px auto;
+    max-width: 430px;
+}
+
+.telechargement_appli li {
+    display: inline-block;
+    margin: 30px 24px 0;
+}
+.telechargement_appli li img {
+    width: 120px;
+}
+.icones_appli {
+    margin: 0 auto;
+}
+li.galerie_right img {
+    max-width: 413px;
+    float: right;
+}
+@media screen and (max-width: 1500px){
+    .decouvrir_application_texte{
+        width: 59%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .decouvrir_application_texte{
+        width: 53%;
+    }
+    .connexion_form .row>div{
+        width: 26.6%;
+    }
+}
+@media screen and (min-width: 1800px){
+    .convers{
+        margin: 80px auto;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .inscription_form form>ul>li>ul>.type ul, .inscription_form form>ul>li>ul>.musee ul, .inscription_form form>ul>li>ul>.hotel ul,.inscription_form form>ul>li>ul>li>ul{
+        max-width: 87%;
+    }
+    .inscription_form form>ul>li>ul>li>ul>li, .moyen li>small, .moyen>ul>li>ul>li, .moyen>ul>li>ul, .toggle_check small{
+        margin-right: 10px;
+    }
+    .inscription_form{
+        padding: 50px 20px 50px 55px;
+        top:154px;
+    }
+    .connexion_form .row>div{
+        width: 50%;
+        margin: 15px 0;
+    }
+    .inscription_submit{
+        float: right;
+        margin-top: 15px;
+    }
+}
 @media screen and (max-width: 992px){
+    .convers .instantanee{
+        display: none;
+    }
+    .decouvrir_application{
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .rejoindre_communaute .rejoindre_communaute_image,
+    .rejoindre_communaute_texte{
+        width:100%;
+        float: none;
+        clear: both;
+
+    }
+    .inscription_form .btn_rounded{
+        right: 0;
+    }
+    .decouvrir_application_iphone{
+        width: 395px;
+        left: -52px;
+    }
+    .decouvrir_application_texte{
+        width: 48%;
+    }
+    .decouvrir_application_texte .titre_section h2{
+        text-align: left;
+    }
+    .decouvrir_application_texte .titre_section strong {
+        text-align: left;
+    }
+    .decouvrir_application_texte p {
+        text-align: left;
+    }
+    .icones_appli{
+        display: none;
+    }
+    .footer_contact li{
+        margin: 0 15px;
+    }
+    .rejoindre_communaute .rejoindre_communaute_image img{
+        max-width: 100%;
+    }
+    .inscription_form{
+        top:20px;
+        padding: 40px 20px 45px 50px;
+    }
+    .galerie_right img {
+        max-width: 318px;
+        float: right;
+    }
+    .a_la_une_galerie ul li{
+        padding: 10px 0;
+    }
+    .connexion_form{
+        overflow: hidden;
+        clear: both;
+    }
+    .rejoindre_communaute_texte .titre_section h2{
+        max-width: 90%;
+    }
+    .rejoindre_communaute{
+        max-height: 100%;
+    }
+    .description_site{
+        background: url(../images/home_eiffel_1024.jpg) bottom right no-repeat;
+        background-size: 100%;
+    }
+    .header_compte{
+        background-size: 100%;
+        background: #fff url("../images/compte_background_header_ipad.jpg") left center no-repeat;
+        clear: both;
+        overflow: hidden;
+    }
     .compte_result_transports li:before{
         width: 50px;
         height: 50px;
@@ -1745,12 +1974,6 @@ section.header_agenda {
     }
     .agenda_result_scroll{
         height: 630px;
-    }
-    .header_compte{
-        background-size: 1080px;
-        background-position: center top;
-        clear: both;
-        overflow: hidden;
     }
     .nav_compte{
         float: left;
@@ -1792,10 +2015,13 @@ section.header_agenda {
         margin-top: 20px;
     }
     .compte_result_transports li:before{
-        margin-right: 9px;
+        margin-right: 7px;
     }
     .compte_result_transports .li_transports_co2{
         margin-left: 30px;
     }
-    .arrow_hebergement{}
+    .modal_connexion{
+        top: 31%;
+        z-index: 36;
+    }
 }
