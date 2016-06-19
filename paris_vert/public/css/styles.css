@@ -873,7 +873,7 @@ header{
     font-weight: bold;
     border-radius: 20px;
     border: none;
-    width: 40px;
+    padding: 0 13px;
     height: 40px;
     font-size: 25px;
     vertical-align: middle;
@@ -1467,7 +1467,7 @@ a.ui-datepicker-next.ui-corner-all {
     font-weight: bold;
     border-radius: 20px;
     border: none;
-    width: 40px;
+    padding: 0 13px;
     height: 40px;
     font-size: 25px;
     vertical-align: middle;
