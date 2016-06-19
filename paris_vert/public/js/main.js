@@ -121,7 +121,10 @@ $(document).ready(function(){
                 }
             } else {
                 if (user_active != null) {
-                    window.location.href = '#compte';
+                    sessionStorage.removeItem('user_active');
+                    window.location.href = "#accueil";
+                    $('.open_connexion').html('Connexion');
+                    $('.between-spaces').css('display', 'none');
                 } else {
                     $('.modal_connexion').fadeIn();
                 }
@@ -187,13 +190,17 @@ $(document).ready(function(){
                 content = 'pages/' + hashes[0] + '.html',
                 user_active = JSON.parse(sessionStorage.getItem('user_active'));
             depart = false;
+
             if (hashes.length <= 1) {
+                $('header').fadeOut();
                 $('.content').fadeOut(function () {
+                    $('header').fadeIn(700);
                     $('.content').load(content).delay(200).fadeIn(400, function () {
                         if (hashes[0] == 'compte' && user_active != null) {
                             var lis = '';
                             $('.infos_profil p').html(user_active.username);
                             $('.infos_profil small').html(user_active.ville);
+                            $('.comment span').html(user_active.username);
                             if ($('.visited').length < 1) {
                                 for (var i in user_active.visites) {
                                     lis = '<li class="visited">' + user_active.visites[i] + '</li>';
@@ -205,7 +212,9 @@ $(document).ready(function(){
                 });
             } else {
                 if ($('footer').length < 1) {
+                    $('header').fadeOut();
                     $('.content').fadeOut(function () {
+                        $('header').fadeIn(700);
                         $('.content').load(content).delay(200).fadeIn(400, function () {
                             $('.principal_content_compte').fadeOut(function () {
                                 var content_intern = 'pages/' + hashes[1] + '.html';
@@ -217,6 +226,7 @@ $(document).ready(function(){
                                 if (hashes[0] == 'compte' && user_active != null) {
                                     var lis = '';
                                     $('.infos_profil p').html(user_active.username);
+                                    $('.comment span').html(user_active.username);
                                     $('.infos_profil small').html(user_active.ville);
                                     if ($('.visited').length < 1) {
                                         for (var i in user_active.visites) {
@@ -241,6 +251,7 @@ $(document).ready(function(){
                             var lis = '';
                             $('.infos_profil p').html(user_active.username);
                             $('.infos_profil small').html(user_active.ville);
+                            $('.comment span').html(user_active.username);
                             if ($('.visited').length < 1) {
                                 for (var i in user_active.visites) {
                                     lis = '<li class="visited">' + user_active.visites[i] + '</li>';
@@ -250,6 +261,34 @@ $(document).ready(function(){
                         }
                     });
                 }
+            }
+            if(hashes[0] == 'accueil'){
+                $('.between-spaces')
+                    .attr('href','#compte')
+                    .html('Espace Compte');
+                $('.connexion_btn').attr('id','main_accueil_nav');
+            }else{
+                if(hashes[0] == 'compte') {
+                    $('.connexion_btn').attr('id','main_compte_nav');
+                }else{
+                    $('.connexion_btn').attr('id','main_accueil_nav');
+                }
+                $('.between-spaces')
+                    .attr('href', '#accueil')
+                    .html('Home');
+            }
+            if(user_active == null){
+                if(hashes[0] == 'accueil') {
+                    $('.between-spaces').css('display', 'none');
+                }else{
+                    $('.between-spaces').css('display','block');
+                }
+                $('.open_connexion')
+                    .html('Connexion');
+            }else{
+                $('.between-spaces').css('display','block');
+                $('.open_connexion')
+                    .html('Déconnexion');
             }
         };
         $(window).on('hashchange', function () {

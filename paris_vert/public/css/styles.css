@@ -91,8 +91,9 @@ button{
 header{
     position: absolute;
     top:0;
-    z-index: 1000;
+    z-index: 5000;
     width:100%;
+    display: none;
 }
 .header_inner{
     position: relative;
@@ -109,24 +110,38 @@ header{
     color:#fff;
     font-weight: bold;
 }
+.connexion_btn a{
+    color:#fff;
+    text-decoration: none;
+}
+.connexion_btn a{
+    color:#fff;
+    text-decoration: none;
+}
+.main_nav_compte a{
+    display: inline-block;
+    margin-left: 30px;
+}
 /*ACCUEIL*/
 .modal_connexion{
     position: absolute;
-    width: 85%;
+    width: 100%;
     left: 50%;
-    -webkit-transform: translateX(-50%);;
-    -moz-transform: translateX(-50%);;
-    -ms-transform: translateX(-50%);;
-    -o-transform: translateX(-50%);;
-    transform: translateX(-50%);;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
     display: none;
+    z-index: 2000;
 }
 .modal_connexion>div{
     background: #fff;
     padding: 120px 80px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
+    max-width: 1005px;
 }
 .modal_connexion>div>div{
     margin: 20px;
@@ -293,6 +308,7 @@ header{
     width: 35px;
     padding: 8px 0;
     outline: none;
+    z-index: 8000;
 }
 .close_modal small{
     color: #fff;
@@ -301,11 +317,11 @@ header{
 .inscription_form{
     background: #fff;
     position: absolute;
-    top: 105px;
+    top: -2px;
     left: 50%;
-    z-index: 2000;
-    padding: 40px 20px 45px 75px;
-    width: 96%;
+    z-index: 12000;
+    padding: 50px 20px 50px 52px;
+    width: 100%;
     box-sizing: border-box;
     display: none;
     max-width: 1170px;
@@ -371,12 +387,12 @@ header{
 .moyen>ul>li>ul,
 .toggle_check small{
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 7px;
     margin-bottom: 5px;
 }
 .inscription_form form>ul>li>ul>li>ul{
     display: inline-block;
-    max-width: 90%;
+    max-width: 86%;
 }
 .moyen>ul>li>ul>li{
     margin-bottom: 0;
@@ -420,7 +436,7 @@ header{
 .toggle_check small,
 .moyen .toggle_check>ul>li,
 .inscription_form form>ul>li>ul>.toggle_check>ul>li{
-    margin-right: 10px;
+    margin-right: 2px;
 }
 .toggle_check li,
 .toggle_check>ul,
@@ -431,7 +447,7 @@ header{
     max-width: 460px;
 }
 .inscription_form form>ul>li>ul>.type ul,.inscription_form form>ul>li>ul>.musee ul,.inscription_form form>ul>li>ul>.hotel ul{
-    max-width: 88%;
+    max-width: 86%;
 }
 .interet,.hebergement{
     /* margin-left: 100px; */
@@ -508,7 +524,7 @@ header{
     max-height: 372px;
     height: auto;
     overflow: hidden;
-    width: 97%;
+    width: 90%;
 }
 .rejoindre_communaute .rejoindre_communaute_image{
     width: 50%;
@@ -1853,8 +1869,8 @@ li.galerie_right.col-md-6.col-lg-4.col-sm-6 {
     margin: 0 auto;
 }
 li.galerie_right img {
-    max-width: 413px;
-    float: right;
+    /* max-width: 413px; */
+    /* float: right; */
 }
 @media screen and (max-width: 1500px){
     .decouvrir_application_texte{
@@ -1868,6 +1884,10 @@ li.galerie_right img {
     .connexion_form .row>div{
         width: 26.6%;
     }
+    .decouvrir_application_iphone{
+        width:405px;
+        left:9px;
+    }
 }
 @media screen and (min-width: 1800px){
     .convers{
@@ -1876,7 +1896,8 @@ li.galerie_right img {
 }
 @media screen and (max-width: 1024px) {
     .inscription_form form>ul>li>ul>.type ul, .inscription_form form>ul>li>ul>.musee ul, .inscription_form form>ul>li>ul>.hotel ul,.inscription_form form>ul>li>ul>li>ul{
-        max-width: 87%;
+        max-width: 100%;
+        vertical-align: top;
     }
     .inscription_form form>ul>li>ul>li>ul>li, .moyen li>small, .moyen>ul>li>ul>li, .moyen>ul>li>ul, .toggle_check small{
         margin-right: 10px;
@@ -1895,6 +1916,9 @@ li.galerie_right img {
     }
 }
 @media screen and (max-width: 992px){
+    .type, .musee, .hotel{
+        max-width: 100%;
+    }
     .convers .instantanee{
         display: none;
     }
@@ -1928,6 +1952,9 @@ li.galerie_right img {
     .decouvrir_application_texte p {
         text-align: left;
     }
+    .inscription_form form>ul>li>ul>li{
+        margin: 4px 0;
+    }
     .icones_appli{
         display: none;
     }
@@ -1938,12 +1965,12 @@ li.galerie_right img {
         max-width: 100%;
     }
     .inscription_form{
-        top:20px;
-        padding: 40px 20px 45px 50px;
+        top: -21px;
+        padding: 35px 20px 30px 50px;
     }
-    .galerie_right img {
-        max-width: 318px;
-        float: right;
+    li.galerie_right img {
+        /* max-width: 318px; */
+        /* float: right; */
     }
     .a_la_une_galerie ul li{
         padding: 10px 0;
@@ -2025,7 +2052,7 @@ li.galerie_right img {
         margin-left: 30px;
     }
     .modal_connexion{
-        top: 31%;
+        top: 0;
         z-index: 36;
     }
 }
