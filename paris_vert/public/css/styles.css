@@ -407,9 +407,9 @@ header{
 .inscription_form input[type=checkbox]:checked + label,
 .inscription_form input[type=radio]:not(:checked) + label,
 .inscription_form input[type=radio]:checked + label{
-    position: relative; /* permet de positionner les pseudo-Ã©lÃ©ments */
-    padding-right: 20px; /* fait un peu d'espace pour notre case Ã  venir */
-    cursor: pointer;    /* affiche un curseur adaptÃ© */
+    position: relative; /* permet de positionner les pseudo-ÃƒÆ’Ã‚Â©lÃƒÆ’Ã‚Â©ments */
+    padding-right: 20px; /* fait un peu d'espace pour notre case ÃƒÆ’Ã‚Â  venir */
+    cursor: pointer;    /* affiche un curseur adaptÃƒÆ’Ã‚Â© */
 }
 [type="checkbox"]:not(:checked) + label:after,
 [type="checkbox"]:checked + label:after,
@@ -766,7 +766,7 @@ header{
     margin: 0 auto 10px
 }
 /*PRINCIPAL CONTENT*/
-/*CommunautÃ©*/
+/*CommunautÃƒÆ’Ã‚Â©*/
 .convers{
     background: #fff;
     margin: 50px 20px;
@@ -916,7 +916,7 @@ header{
     text-align: center;
 }
 .construction_content #construction_img{
-    width: 50%;
+    width: 40%;
     margin: 20px auto;
     display: block;
     max-width: 700px;
@@ -1543,6 +1543,7 @@ a.ui-datepicker-next.ui-corner-all {
     top:50%;
     margin-top: -100px;
     z-index: 100;
+    padding: 0 20px;
 }
 .arrow_right{
     width: 0;

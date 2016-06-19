@@ -2,8 +2,8 @@ $(document).ready(function(){
     if($(window).width()>=768) {
         $(window).resize(function(){
             if($(window).width()<767){
-                $('body,html,.content').css('height','100%');
-                $('.content')
+                $('body,html,.content_general').css('height','100%');
+                $('.content_general')
                     .html('<p class="error">Votre écran est trop petit,<br>agrandissez et rechargez la page<br>ou changez de support !</p>')
                     .css('position','relative');
             }
@@ -535,15 +535,19 @@ $(document).ready(function(){
         $(document).on('click', '.show_text', function () {
             $('.edit').removeClass('edit');
             $(this).closest('td').addClass('edit');
-            $(this).next('.edit_text').find('textarea').val($(this).closest('.show_text').find('p').html()).focus();
+            var text_area = $(this).closest('td').find('.edit_text').find('textarea');
+            var p = $(this).closest('td').find('.show_text').find('p').html();
+            $(text_area)
+                .focus()
+                .val(p);
         });
         $(document).on('click', '.edit_text>button', function () {
             $(this).closest('td').removeClass('edit');
             $(this).closest('div').next('.show_text').find('p').html($(this).closest('.edit_text').find('textarea').val());
         })
     }else{
-        $('body,html,.content').css('height','100%');
-        $('.content')
+        $('body,html,.content_general').css('height','100%');
+        $('.content_general')
             .append('<p class="error">Votre écran est trop petit,<br>agrandissez et rechargez la page<br>ou changez de support !</p>')
             .css('position','relative');
     }
