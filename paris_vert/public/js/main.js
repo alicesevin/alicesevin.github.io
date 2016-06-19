@@ -286,7 +286,11 @@ $(document).ready(function(){
                 $('.open_connexion')
                     .html('Connexion');
             }else{
-                $('.between-spaces').css('display','block');
+                if(hashes[0] == 'compte') {
+                    $('.between-spaces').css('display', 'inline-block');
+                }else{
+                    $('.between-spaces').css('display','block');
+                }
                 $('.open_connexion')
                     .html('Déconnexion');
             }
@@ -532,7 +536,7 @@ $(document).ready(function(){
                 elem2.text(parseInt(compteur2)+1);
             }
         }
-        $(document).on('click', '.show_text', function () {
+        $(document).on('click touchstart', '.show_text', function () {
             $('.edit').removeClass('edit');
             $(this).closest('td').addClass('edit');
             var text_area = $(this).closest('td').find('.edit_text').find('textarea');
@@ -541,7 +545,7 @@ $(document).ready(function(){
                 .focus()
                 .val(p);
         });
-        $(document).on('click', '.edit_text>button', function () {
+        $(document).on('click touchstart', '.edit_text>button', function () {
             $(this).closest('td').removeClass('edit');
             $(this).closest('div').next('.show_text').find('p').html($(this).closest('.edit_text').find('textarea').val());
         })

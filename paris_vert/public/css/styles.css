@@ -78,6 +78,9 @@ button{
     line-height: 25px;
     text-transform: uppercase;
 }
+.btn_rounded a:hover{
+    text-decoration:none
+}
 .container,.container-fluid{
     max-width: 1600px;
     margin: 0 auto;
@@ -109,18 +112,11 @@ header{
     top:10px;
     color:#fff;
     font-weight: bold;
+    text-align: right;
 }
 .connexion_btn a{
     color:#fff;
     text-decoration: none;
-}
-.connexion_btn a{
-    color:#fff;
-    text-decoration: none;
-}
-.main_nav_compte a{
-    display: inline-block;
-    margin-left: 30px;
 }
 /*ACCUEIL*/
 .modal_connexion{
@@ -134,6 +130,7 @@ header{
     transform: translateX(-50%);
     display: none;
     z-index: 2000;
+    top: 0;
 }
 .modal_connexion>div{
     background: #fff;
@@ -141,7 +138,7 @@ header{
     width: 100%;
     margin: 0 auto;
     position: relative;
-    max-width: 1005px;
+    max-width: 1204px;
 }
 .modal_connexion>div>div{
     margin: 20px;
@@ -324,7 +321,7 @@ header{
     width: 100%;
     box-sizing: border-box;
     display: none;
-    max-width: 1170px;
+    max-width: 1600px;
     -webkit-transform:translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -367,6 +364,7 @@ header{
 }
 .inscription_form form>ul>li{
     text-align: left;
+    padding: 0;
 }
 .inscription_form form>ul>li>ul>li{
     margin: 10px 0;
@@ -407,9 +405,9 @@ header{
 .inscription_form input[type=checkbox]:checked + label,
 .inscription_form input[type=radio]:not(:checked) + label,
 .inscription_form input[type=radio]:checked + label{
-    position: relative; /* permet de positionner les pseudo-ÃƒÆ’Ã‚Â©lÃƒÆ’Ã‚Â©ments */
-    padding-right: 20px; /* fait un peu d'espace pour notre case ÃƒÆ’Ã‚Â  venir */
-    cursor: pointer;    /* affiche un curseur adaptÃƒÆ’Ã‚Â© */
+    position: relative; /* permet de positionner les pseudo-ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©lÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©ments */
+    padding-right: 20px; /* fait un peu d'espace pour notre case ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â  venir */
+    cursor: pointer;    /* affiche un curseur adaptÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â© */
 }
 [type="checkbox"]:not(:checked) + label:after,
 [type="checkbox"]:checked + label:after,
@@ -444,7 +442,7 @@ header{
     display: block;
 }
 .type,.musee,.hotel{
-    max-width: 460px;
+    max-width: 500px;
 }
 .inscription_form form>ul>li>ul>.type ul,.inscription_form form>ul>li>ul>.musee ul,.inscription_form form>ul>li>ul>.hotel ul{
     max-width: 86%;
@@ -479,7 +477,7 @@ header{
 .apero:before{
     background: url('../images/inscription_soleil.png') center center no-repeat;
     background-size: contain;
-    vertical-align: middle;
+    vertical-align: baseline;
 }
 .musee:before{
     background: url('../images/inscription_ticket.png') center center no-repeat;
@@ -594,7 +592,7 @@ header{
 }
 /*CARROUSSEL*/
 .le_tout_paris{
-    background: #121111;
+    background: #fff;
     padding: 65px 0 0;
 }
 .le_tout_paris .inner{
@@ -602,6 +600,7 @@ header{
 }
 .le_tout_paris .titre_section h2{
     color:#e5165a;
+    text-transform: uppercase;
 }
 .le_tout_paris .titre_section strong{
     color:#c4235f;
@@ -611,10 +610,13 @@ header{
     max-width: 540px;
     margin: 0 auto;
     text-align: center;
+    float: none;
+    clear: both;
+    overflow: hidden;
 }
 #carousel-example-generic{
-    background: #5fb35b;
     margin-top: 40px;
+    padding: 0;
 }
 .carousel-inner{
     text-align: center;
@@ -659,21 +661,22 @@ header{
     text-transform: uppercase;
     text-shadow: 0 4px 1px rgba(0,0,0,0.4);
     line-height: 36px;
-    padding: 45px 0 35px 100px;
+    padding: 45px 0 28px 40px;
     text-align: left;
 }
 .item_ecologie strong{
-    max-width: 700px;
+    max-width: 543px;
     display: block;
-    text-align: left;
+    text-align: center;
     line-height: 32px;
-    padding-left: 170px;
+    margin: 0 auto;
+    font-size: 22px;
 }
 /*COMPTE*/
 .header_compte{
-    background: #fff url("../images/compte_background_header.png") center bottom no-repeat;
+    background: #fff url("../images/compte_background_header.png") center 90% no-repeat;
     background-size: 1920px;
-    padding: 150px 0 60px;
+    padding: 140px 0 60px;
     position: relative;
     width: 100%;
 }
@@ -683,12 +686,12 @@ header{
 .header_compte .comment>p{
     color:#fff;
     font-weight: bold;
-    font-size:20px;
+    font-size: 25px;
     margin-bottom: 10px;
 }
 .header_compte .comment>small{
     color:#fff;
-    font-size:16px;
+    font-size: 18px;
 }
 .header_compte .profil{
     float: right;
@@ -766,7 +769,7 @@ header{
     margin: 0 auto 10px
 }
 /*PRINCIPAL CONTENT*/
-/*CommunautÃƒÆ’Ã‚Â©*/
+/*CommunautÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©*/
 .convers{
     background: #fff;
     margin: 50px 20px;
@@ -1618,6 +1621,7 @@ a.ui-datepicker-next.ui-corner-all {
     left: 50%;
     max-width: 80%;
     word-wrap: break-word;
+    opacity: 0.7;
 }
 .principal_content_planning button a:hover {
     text-decoration: none;
@@ -1780,24 +1784,31 @@ footer small{
     display: none;
 }
 section.header_agenda {
-    padding: 160px 0 70px;
-    background: #000;
+    padding: 140px 0 180px;
+    background: url("../images/header_agenda.jpg") center center no-repeat;
+    background-size: 100%;
     margin-bottom: 40px;
 }
-
+.content_general section.header_questions{
+    background: url("../images/header_questions.jpg") center center no-repeat;
+    background-size: 100%;
+}
 .header_agenda .comment {
     margin-left: 80px;
     color: #fff;
 }
+.header_agenda .comment small{
+    font-size:16px
+}
 .header_agenda .comment p{
     color: #fff;
     font-weight: bold;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 23px;
+    line-height: 42px;
 }
 .agenda_result .hebergement_text strong small, .labels_approuves_results .hebergement_text strong small{
     display: block;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
     font-style: italic;
 }
@@ -1869,9 +1880,39 @@ li.galerie_right.col-md-6.col-lg-4.col-sm-6 {
 .icones_appli {
     margin: 0 auto;
 }
+#main_compte_nav a {
+    display: inline-block;
+    margin-left: 30px;
+}
+#main_accueil_nav a {
+    margin-bottom: 17px;
+}
 li.galerie_right img {
     /* max-width: 413px; */
     /* float: right; */
+}
+.carousel-control.left,
+.carousel-control.right{
+    background: none;
+}
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next{
+    right: 45%;
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev{
+    left: 5%;
+}
+.glyphicon-chevron-left:before,
+.glyphicon-chevron-right:before{
+    content : '';
+    width: 90px;
+    height: 90px;
+    display: block;
+    background: url('../images/fleche_droite.png') center center no-repeat;
+    background-size: contain;
+}
+.glyphicon-chevron-left:before{
+    background: url('../images/fleche_gauche.png') center center no-repeat;
+    background-size: contain;
 }
 @media screen and (max-width: 1500px){
     .decouvrir_application_texte{
@@ -1896,16 +1937,23 @@ li.galerie_right img {
     }
 }
 @media screen and (max-width: 1024px) {
+    section.header_agenda{
+        background: url("../images/header_agenda_ipad.jpg") center center no-repeat;
+    }
+
+    .inscription_form form>ul>li>ul>.maison ul{
+        display: block;
+        margin-left: 55px;
+    }
     .inscription_form form>ul>li>ul>.type ul, .inscription_form form>ul>li>ul>.musee ul, .inscription_form form>ul>li>ul>.hotel ul,.inscription_form form>ul>li>ul>li>ul{
-        max-width: 100%;
-        vertical-align: top;
+        max-width: 85%;
     }
     .inscription_form form>ul>li>ul>li>ul>li, .moyen li>small, .moyen>ul>li>ul>li, .moyen>ul>li>ul, .toggle_check small{
         margin-right: 10px;
     }
     .inscription_form{
-        padding: 50px 20px 50px 55px;
-        top:154px;
+        padding: 50px 0 50px 50px;
+        top: -5px;
     }
     .connexion_form .row>div{
         width: 50%;
@@ -1917,6 +1965,10 @@ li.galerie_right img {
     }
 }
 @media screen and (max-width: 992px){
+    .inscription_form form>ul>li>ul>.maison ul{
+        display: inline-block;
+        margin-left: 5px;
+    }
     .type, .musee, .hotel{
         max-width: 100%;
     }
@@ -1967,7 +2019,7 @@ li.galerie_right img {
     }
     .inscription_form{
         top: -21px;
-        padding: 35px 20px 30px 50px;
+        padding: 25px 20px 30px 30px;
     }
     li.galerie_right img {
         /* max-width: 318px; */
@@ -1992,7 +2044,7 @@ li.galerie_right img {
     }
     .header_compte{
         background-size: 100%;
-        background: #fff url("../images/compte_background_header_ipad.jpg") left center no-repeat;
+        background: #fff url("../images/compte_background_header_ipad.jpg") center top no-repeat;
         clear: both;
         overflow: hidden;
     }
@@ -2055,5 +2107,14 @@ li.galerie_right img {
     .modal_connexion{
         top: 0;
         z-index: 36;
+    }
+    .inscription_form form>ul>li>ul>.type ul, .inscription_form form>ul>li>ul>.musee ul, .inscription_form form>ul>li>ul>.hotel ul, .inscription_form form>ul>li>ul>li>ul{
+        max-width: 98%;
+    }
+    .type:before,.apero:before,.musee:before,.hotel:before{
+        vertical-align: top;
+    }
+    .content_general section.header_questions{
+        background : url("../images/header_questions_ipad.jpg") center center no-repeat
     }
 }
