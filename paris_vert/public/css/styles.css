@@ -130,40 +130,45 @@ header{
     transform: translateX(-50%);
     display: none;
     z-index: 2000;
-    top: 0;
+    top: 116px;
 }
 .modal_connexion>div{
     background: #fff;
-    padding: 120px 80px;
+    padding: 50px 20px 80px;
     width: 100%;
     margin: 0 auto;
     position: relative;
     max-width: 1204px;
+    border: 5px solid #e5165a;
 }
 .modal_connexion>div>div{
-    margin: 20px;
+    margin: 20px 30px;
     display: inline-block;
+    position: relative;
 }
 .modal_connexion>div>div>input{
     border: 2px solid #c5215f;
     background: transparent;
-    padding: 5px 30px 5px 10px;
+    padding: 15px 30px 15px 36px;
     outline: none;
     width: 200px;
     box-sizing: border-box;
-    height:40px
+    height: 50px;
+    border-radius: 5px;
 }
 .modal_connexion>div>strong{
-    color: #c61e60;
-    padding-bottom: 41px;
+    color: #5FB45B;
+    padding-bottom: 9px;
     display: block;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
 }
 .modal_connexion>div .go-compte{
     float: none;
-    margin: 30px auto 0;
-    display: block;
+    margin-left: 29px;
+    display: inline-block;
+    height: 50px;
+    border-radius: 8px;
 }
 /*SECTION 1*/
 .description_site{
@@ -252,7 +257,7 @@ header{
     width: 100%;
     outline: none;
 }
-.connexion_form .row>div:before{
+.modal_connexion>div>div:before, .connexion_form .row>div:before{
     content: "";
     position:absolute;
     z-index: 30;
@@ -262,7 +267,7 @@ header{
     height:35px;
 
 }
-.connexion_form .row>.inscription_password:before{
+.modal_connexion>div>.inscription_password:before, .connexion_form .row>.inscription_password:before{
     background: url(../images/inscription_password.png) center center no-repeat;
     background-size: contain;
     height:40px;
@@ -272,7 +277,7 @@ header{
     background-size: contain;
     left:-5px;
 }
-.connexion_form .row>.inscription_username:before{
+.modal_connexion>div>.inscription_username:before, .connexion_form .row>.inscription_username:before{
     background: url(../images/inscription_login.png) center center no-repeat;
     background-size: contain;
 }
@@ -2105,8 +2110,12 @@ li.galerie_right img {
         margin-left: 30px;
     }
     .modal_connexion{
-        top: 0;
+        top: 116px;
         z-index: 36;
+    }
+    .modal_connexion>div>div{
+        margin: 20px 10px;
+        position: relative;
     }
     .inscription_form form>ul>li>ul>.type ul, .inscription_form form>ul>li>ul>.musee ul, .inscription_form form>ul>li>ul>.hotel ul, .inscription_form form>ul>li>ul>li>ul{
         max-width: 98%;
@@ -2117,4 +2126,19 @@ li.galerie_right img {
     .content_general section.header_questions{
         background : url("../images/header_questions_ipad.jpg") center center no-repeat
     }
+}
+.modal_connexion>div>.inscription_password:before{
+    height: 33px;
+}
+.modal_connexion>div>div:before {
+    top: 10px;
+    width: 16px;
+    height: 30px;
+    left: 10px;
+}
+.modal_connexion p {
+    color: #9FC455;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 60px;
 }
