@@ -410,9 +410,9 @@ header{
 .inscription_form input[type=checkbox]:checked + label,
 .inscription_form input[type=radio]:not(:checked) + label,
 .inscription_form input[type=radio]:checked + label{
-    position: relative; /* permet de positionner les pseudo-ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©lÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©ments */
-    padding-right: 20px; /* fait un peu d'espace pour notre case ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â  venir */
-    cursor: pointer;    /* affiche un curseur adaptÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â© */
+    position: relative; /* permet de positionner les pseudo-ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©lÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©ments */
+    padding-right: 20px; /* fait un peu d'espace pour notre case ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â  venir */
+    cursor: pointer;    /* affiche un curseur adaptÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â© */
 }
 [type="checkbox"]:not(:checked) + label:after,
 [type="checkbox"]:checked + label:after,
@@ -686,17 +686,19 @@ header{
     width: 100%;
 }
 .header_compte .comment{
-    padding-left: 60px;
+    padding: 24px 60px;
+    background: #e6135a;
+    width: 50%;
 }
 .header_compte .comment>p{
     color:#fff;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 22px;
     margin-bottom: 10px;
 }
 .header_compte .comment>small{
     color:#fff;
-    font-size: 18px;
+    font-size: 16px;
 }
 .header_compte .profil{
     float: right;
@@ -774,7 +776,7 @@ header{
     margin: 0 auto 10px
 }
 /*PRINCIPAL CONTENT*/
-/*CommunautÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©*/
+/*CommunautÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©*/
 .convers{
     background: #fff;
     margin: 50px 20px;
@@ -1791,16 +1793,18 @@ footer small{
 section.header_agenda {
     padding: 140px 0 180px;
     background: url("../images/header_agenda.jpg") center center no-repeat;
-    background-size: 100%;
+    background-size: cover;
     margin-bottom: 40px;
 }
 .content_general section.header_questions{
     background: url("../images/header_questions.jpg") center center no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 .header_agenda .comment {
-    margin-left: 80px;
+    padding: 20px 80px;
     color: #fff;
+    background: #9fc53a;
+    width: 80%;
 }
 .header_agenda .comment small{
     font-size:16px
