@@ -1,0 +1,45 @@
+/*FORM*/
+form{
+  padding: 30px 10px;
+  text-align: center;
+}
+.uk-legend{
+  color : #c92f51;
+  font-size: 22px;
+  padding: 0;
+}
+
+.uk-input,
+.uk-select{
+ padding: 8px 12px;
+ font-size: 12px;
+ height: auto !important;
+}
+.uk-select{
+ text-transform: uppercase;
+}
+.uk-textarea{
+ padding: 10px 12px;
+ font-size: 12px;
+}
+@media (min-width: 640px) {
+  form{
+    padding: 50px 40px;
+  }
+  form .uk-margin{
+    margin: 0 !important;
+    padding: 0 15px 20px;
+  }
+  .uk-legend{
+    font-size: 30px;
+  }
+  .uk-input,
+  .uk-select{
+   padding: 12px 18px;
+   font-size: 16px;
+ }
+ .uk-textarea{
+   padding: 15px 18px;
+   font-size: 16px;
+ }
+}

@@ -1,0 +1,32 @@
+/*Modal*/
+.uk-modal-dialog form{
+	background: url("../../images/motif.jpg") center center repeat;
+	background-size: contain;
+    border: 3px solid #dce7fc;
+    padding: 30px;
+}
+.uk-modal-dialog .uk-close{
+    transform : none;
+    color: #bdbdbd;
+    padding: 10px;
+}
+.uk-modal-dialog .uk-button{
+    margin-top: 50px;
+}
+.uk-modal-dialog .uk-grid{
+    margin-left: 0;
+}
+
+.uk-modal-dialog .uk-margin{
+    padding: 0;
+    margin: 0;
+}
+@media (min-width: 749px) {
+.uk-modal-dialog form{
+    padding: 50px;
+}
+.uk-modal-dialog .uk-margin{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+}

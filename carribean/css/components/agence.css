@@ -1,0 +1,210 @@
+/*AGENCE*/
+.uk-agence .uk-padding-large{
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    text-align: center;
+}
+.uk-agence .uk-padding-large .uk-padding-large{
+    margin-top: -120px;
+}
+.uk-agence .item{
+    padding-bottom: 50px;
+}
+.uk-agence .uk-no-image{
+    display: none !important;
+}
+.uk-agence .uk-background-blue{
+    background: #b8e3fc;
+}
+.uk-agence .item:last-child{
+    padding-bottom: 0;
+}
+.uk-agence .uk-card{
+    padding: 40px 30px;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    width: 85%;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    display: inline-block;
+    box-shadow: none;
+}
+.uk-agence .uk-card .uk-title,
+.uk-agence .uk-card .uk-subtitle{
+    margin: 0 auto;
+}
+.uk-agence .uk-card .uk-title + .uk-subtitle{
+    margin: 10px auto 0;
+}
+.uk-agence .uk-list{
+    text-align: left;
+}
+.uk-agence .uk-button{
+    margin-bottom: 20px;
+}
+.uk-agence .uk-card .uk-subtitle  + .uk-list,
+.uk-agence .uk-card .uk-subtitle  + p,
+.uk-agence .uk-card .uk-title  + p,
+.uk-agence .uk-card .uk-title  + .uk-list{
+    margin: 40px auto 40px;
+}
+.uk-agence .uk-display-block{
+    height: 468px;
+    background-position: 37% 50%;
+}
+.agence .uk-agence{
+    padding: 0;
+    background: #fff;
+}
+.agence .uk-text-left{
+    padding: 0 20px;
+}
+.agence .uk-agence .uk-card{
+    padding: 37px 20px;
+}
+.agence .uk-list,
+.agence .uk-card p{
+    color: #6a6a6a;
+    font-size: 13px;
+    line-height: 18px;
+}
+.agence .uk-display-block + .uk-card{
+    margin-top: -120px;
+    margin-bottom: 50px;
+}
+.agence .uk-card:after{
+    content : '';
+    background : url('../../images/carib/ring/r-i-n-g@3x.png') center center no-repeat;
+    background-size: contain;
+    height: 12px;
+    width: 210px;
+    display: block;
+    margin: 20px auto 0;
+}
+/*MEDIA QUERIES*/
+@media (min-width: 640px) {
+    .uk-agence .uk-padding-large .uk-padding-large{
+        margin-top: 0;
+    }
+    .uk-agence {
+        padding-bottom: 0;
+    }
+    .uk-agence .uk-display-block{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-position: 50% 50%;
+    }
+    .uk-agence .uk-padding-large{
+        padding: 0;
+        margin: 0;
+    }
+    .uk-agence .uk-display-block+.uk-padding-large .uk-padding-large{
+        padding: 40px 30px;
+        text-align: right;
+    }
+    .uk-agence .uk-card{
+        padding: 70px 40px;
+        width: 60%;
+    }
+    .agence .owl-carousel{
+        height: calc(100vh - 233px);
+        min-height: 490px;
+    }
+    .agence .item .uk-display-block,
+    .agence .owl-carousel .owl-stage,
+    .agence .owl-stage-outer,
+    .agence .item,
+    .agence .owl-item,
+    .agence .item >div,
+    .agence .item .uk-inline{
+        height: 100%;
+    }
+    .agence .uk-card:after{
+        width: 240px;
+    }
+    .agence .uk-no-image + .uk-padding-large{
+        display: flex;
+        justify-content : center;
+        align-items : center;
+        width: 95%;
+        max-width: 1040px;
+        margin: 0 auto;
+    }
+    .agence .uk-no-image + .uk-padding-large>div{
+        width: 50%;
+        position: relative;
+    }
+    .agence .uk-no-image + .uk-padding-large>.uk-first-column{
+        margin-top: 50px;
+    }
+    .agence .uk-no-image + .uk-padding-large .uk-display-block{
+        position: static;
+        width: 85%;
+        margin: 0 auto;
+        max-width: 330px;
+        max-height: 460px;
+        min-height: 380px;
+        height:calc( 100vh - 380px);
+    }
+    .agence .uk-no-image + .uk-padding-large .uk-card{
+        transform : none;
+        left: 0;
+        top: auto;
+        bottom: 5%;
+        margin-bottom: 0;
+        position: absolute;
+
+        width: 85%;
+        max-width: 320px;
+        padding: 20px;
+
+    }
+    .agence .uk-padding-large{
+        height: 100%;
+        position: relative;
+    }
+    .agence .uk-text-left{
+        padding: 0 10px;
+    }
+    .agence .uk-card{
+        max-width: 400px;
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        transform : translateY(-50%);
+    }
+    .agence .uk-agence .uk-display-block+.uk-padding-large .uk-padding-large{
+        text-align: left;
+        height: 100%;
+        padding: 30px 100px;
+    }
+    .agence .uk-list li{
+        margin-top: 20px;
+    }
+    .agence .uk-list,
+    .agence .uk-card p{
+        max-height: 265px;
+        overflow: auto;
+    }
+}
+@media (min-width: 959px) {
+    .uk-agence .uk-card{
+        padding: 100px 50px;
+        width: 50%;
+    }
+    .uk-agence .uk-display-block+.uk-padding-large .uk-padding-large{
+        padding: 110px 90px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .agence .uk-card{
+        max-width: 360px;
+    }
+    .agence .uk-agence .uk-display-block+.uk-padding-large .uk-padding-large{
+        padding: 50px 150px;
+    }
+}

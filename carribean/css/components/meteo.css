@@ -1,0 +1,22 @@
+.meteo .uk-inline .uk-title__first{
+    color: #bdbdbd;
+    text-align: center;
+}.meteo .uk-display-block{
+		height: 320px;
+	}
+    .meteo .uk-section{
+        width: 90%;
+        margin: 0 auto 4%;
+        background: #fff;
+		padding: 7% 0;
+    }
+    .meteo .uk-container{
+    	max-width: none;
+    	padding: 0;
+    	width: 100%;
+    }
+@media (min-width: 640px) {
+	.meteo .uk-display-block{
+		height: 380px;
+	}
+}

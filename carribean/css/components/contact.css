@@ -1,0 +1,46 @@
+.contact .uk-container{
+	padding: 5% 0;
+	max-width: none;
+}
+.contact .uk-grid{
+	margin-left: 0;
+}
+.contact .uk-grid>*{
+	padding:5% 10%;
+}
+.contact .uk-inline{
+	text-align: center;
+}
+.contact .uk-display-block{
+	height: 382px;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+	margin: 0 auto;
+}
+.contact .uk-overlay-small{
+	padding: 20px 10px;
+	width: 90%;
+	max-width: 320px;
+}
+.contact .uk-overlay-small strong{
+	font-size: 14px;
+	color : #ea2b51;
+	line-height: 18px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+@media (min-width: 520px) {
+	.contact .uk-container{
+		padding: 0;
+	}
+	.contact .uk-grid>*{
+		padding:3%;
+	}
+}
+@media (min-width: 959px) {
+
+	.contact .uk-display-block{
+		max-width: 470px;
+	}
+}
