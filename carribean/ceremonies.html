@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="css/uikit-core.min.css" />
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+<header class="header">
+        <div class="uk-navbar-container uk-navbar">
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <ul class="uk-subnav nav-lang">
+                        <li class="uk-active uk-first-column"><a href="#">FR</a></li>
+                        <li><a href="#">EN</a></li>
+                    </ul>
+                    <ul class="uk-subnav hide-mobile nav-sociaux">
+                        <li class="uk-first-column"><a class="uk-icon" href="#" uk-icon="icon: facebook;ratio: 0.85"></a></li>
+                        <li><a class="uk-icon" href="#" uk-icon="icon: instagram;ratio: 0.85"></a></li>
+                        <li><a class="uk-icon" href="#" uk-icon="icon: pinterest;ratio: 0.85"></a></li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="uk-navbar-center">
+                <a class="uk-navbar-item uk-logo" href="#"><img src="images/carib/logo/logo@3x.png" alt=""></a>
+            </div>
+            <div class="uk-navbar-right">
+                <a class="hide-desktop uk-icon" href="#offcanvas-overlay-slide" uk-toggle="" uk-icon="icon: menu;ratio: 1.3"></a>
+                <a class="hide-mobile uk-navbar-item uk-button uk-button-primary" href="#"><span>Mon évènement</span></a>
+            </div>
+        </div>
+        <nav class="hide-mobile uk-navbar-container uk-navbar main-nav" uk-navbar>
+            <ul class="uk-subnav uk-navbar-center" uk-margin>
+                <li class="uk-first-column"><a href="index.html">Accueil</a></li>
+                <li><a href="agence.html">l’agence</a></li>
+                <li><a href="meteo.html">les îles de guadeloupe</a></li>
+                <li class="uk-active">
+                    <a href="prestations.html">Prestations</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active"><a href="ceremonies.html">Cérémonie</a>
+                                    <ul>
+                                        <li><a href="ceremonies.html#Alpinia">Formule Alpinia</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="receptions.html">Réception</a>
+                                <ul>
+                                        <li><a href="receptions.html#Anthurium">Formule Anthurium</a></li>
+                                        <li><a href="receptions.html#Allamanda">Formule Allamanda</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="conciergerie.html">Conciergerie</a>
+                                <ul>
+                                        <li><a href="conciergerie.html#Hibiscus">Formule Hibiscus</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                </li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="livre.html">livre d’or</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="offcanvas-overlay-slide" uk-offcanvas="" class="hide-desktop uk-offcanvas">
+
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-text-center uk-offcanvas-bar-animation uk-offcanvas-slide">
+
+               <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical uk-nav-parent-icon" uk-nav="">
+                <li class="uk-first-column"><a href="index.html">Accueil</a></li>
+                <li><a href="agence.html">l’agence</a></li>
+                <li><a href="meteo.html">les îles de guadeloupe</a></li>
+                <li class="uk-active"><a href="prestations.html">prestations</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="livre.html">livre d’or</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <a class="uk-navbar-item uk-button uk-button-primary" href="#"><span>Mon évènement</span></a>
+
+            <div>
+                <ul class="uk-grid-small uk-child-width-auto uk-flex-inline uk-grid" uk-grid="">
+                    <li class="uk-first-column"><a class="uk-icon" href="#" uk-icon="icon: facebook"></a></li>
+                    <li><a class="uk-icon" href="#" uk-icon="icon: instagram"></a></li>
+                    <li><a class="uk-icon" href="#" uk-icon="icon: pinterest"></a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+</header>
+<main class="main detail-prestation"  uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: .uk-display-block; delay: 700; repeat: true">
+    <div class="uk-section uk-section-full uk-section-media uk-flex uk-cover-container" uk-height-viewport="offset-top: true">
+        <img src="images/carib/cere/v-i-s-u-e-l@3x.jpg" alt="" uk-cover class="uk-cover">
+        <div class="uk-overlay uk-overlay-title uk-padding-small uk-position-bottom-center">
+            <h1 class="uk-heading-primary uk-text-center">Cérémonie</h1>
+        </div>
+    </div>
+    <div class="uk-section uk-section-full" id="Alpinia">
+        <div class="uk-container uk-container-small uk-text-center uk-title">
+            <h1 class="uk-title__first">Nos Formules <span class="uk-title__firstPart">Alipnia</span></h1>
+            <h2 class="uk-title__sub">De la cérémonie intime à l’organisation de grandes réceptions,<br>nous vous accompagnons pour réaliser un instant d’exception.</h2>
+        </div>
+        <div class="uk-container uk-prestation uk-container-medium">
+        <div class="uk-panel uk-cartel-white">
+            <div class="uk-inline">
+                <div class="uk-display-block" href="#"><img src="images/carib/cere/groupe-2@3x.jpg" alt=""></div>
+                <div class="uk-detail">
+                    <div>
+                        <h3 class="uk-card-title">Cérémonie intimiste de 2 à 10 personnes</h3>
+                        <h4 class="uk-card-subtitle">Forfait:CP6</h4>
+                        <ul class="uk-list uk-list-bullet">
+                            <li>L’organisation et la gestion d’une magnifique cérémonie d’engagement sur la plage ou en jardin</li>
+                            <li>Toute la documentation et toutes les informations utiles à la bonne réalisation de celle-ci</li>
+                            <li>Des contacts réguliers afin de planifier l’événement</li>
+                            <li>Elle peut être totalement intime avec uniquement votre couple ou avec jusqu’à 10 personnes (supplément pour + de 10 personnes)</li>
+                            <li>Vous lirez vos voeux au milieu d’un coeur de pétales creusé dans le sable ou déposé sur l’herbe</li>
+                            <li>La décoration d’une partie du lieu sera assurée par notre équipe</li>
+                            <li>Le tarif inclus jusqu’à 10 chaises en bois pour vos convives</li>
+                            <li>Nous vous servirons un cocktail créole par personne à base de jus locaux et d’alcool** des îles</li>
+                            <li>Un fond musical créole sera diffusé à la fin</li>
+                            <li>Il y aura une personne spécialement dédiée pour vous qui immortalisera votre cérémonie</li>
+                            <li>Toutes les photos vous serons transmises par internet</li>
+                        </ul>
+                    </div>
+                    <a class="uk-button uk-button-primary" data-forfait="6" href="#modal-center" uk-toggle><span>Réserver</span></a>
+                </div>
+                <div class="uk-display-block" href="#"><img src="images/carib/cere/groupe-1@3x.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="uk-panel uk-cartel-white">
+            <div class="uk-inline">
+                <div class="uk-display-block" href="#"><img src="images/carib/cere/groupe-4@3x.jpg" alt=""></div>
+                <div class="uk-detail">
+                    <div>
+                        <h3 class="uk-card-title">Cérémonie intimiste de 2 à 30 personnes</h3>
+                        <h4 class="uk-card-subtitle">Forfait:CP8</h4>
+                        <ul class="uk-list uk-list-bullet">
+                            <li>L’organisation et la gestion d’une magnifique cérémonie d’engagement sur la plage ou en jardin</li>
+                            <li>Toute la documentation et toutes les informations utiles à la bonne réalisation de celle-ci</li>
+                            <li>Le symbole de votre cérémonie à choisir</li>
+                            <li>Des contacts réguliers afin de planifier votre événement</li>
+                            <li>Elle peut être totalement intime avec uniquement votre couple
+                            ou avec jusqu’à 30 personnes (supplément pour + de 30 personnes)</li>
+                            <li>Nous mettrons en place une magnifique arche en bois flotté ouverte sur la mer</li>
+                            <li>Un chemin en pétales de fleurs fraîches vous guidera vers votre âme soeur</li>
+                            <li>La décoration d’une partie du lieu sera assurée par notre équipe</li>
+                            <li>Le tarif inclus jusqu’à 30 chaises en bois pour vos convives</li>
+                            <li>Et des livrets de cérémonie leurs seront distribués</li>
+                            <li>Un officiant, porte parole de votre amour, orchestrera la cérémonie
+                            et garantira sa fluidité</li>
+                            <li>A la fin de votre cérémonie, un cocktail avec plusieurs boissons créoles vous sera servi</li>
+                            <li>Un fond musical créole sera diffusé à la fin</li>
+                            <li>Un photographe vous sera spécialement dédié pour immortaliser votre moment</li>
+                            <li>Toutes les photos vous serons transmises par internet</li>
+                        </ul>
+                    </div>
+                    <a class="uk-button uk-button-primary" data-forfait="8" href="#modal-center" uk-toggle><span>Réserver</span></a>
+                </div>
+                <div class="uk-display-block" href="#"><img src="images/carib/cere/groupe-3@3x.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="uk-panel uk-cartel-white">
+            <div class="uk-inline">
+                <div class="uk-display-block" href="#"><img src="images/carib/cere/groupe-6@3x.jpg" alt=""></div>
+                <div class="uk-detail">
+                    <div>
+                        <h3 class="uk-card-title">Cérémonie intimiste de 2 à 60 personnes</h3>
+                        <h4 class="uk-card-subtitle">Forfait:CP9</h4>
+                        <ul class="uk-list uk-list-bullet">
+                            <li>L’organisation et la gestion d’une magnifique cérémonie d’engagement sur la plage ou en jardin</li>
+                            <li>Toute la documentation et toutes les informations utiles à la bonne réalisation de celle-ci</li>
+                            <li>Le symbole de votre cérémonie à choisir</li>
+                            <li>Des contacts réguliers afin de planifier votre événement</li>
+                            <li>Elle peut être totalement intime avec uniquement votre couple
+                            ou avec jusqu’à 60 personnes (supplément pour + de 60 personnes)</li>
+                            <li>Nous mettrons en place une magnifique arche en bambou « Porte sur l’Océan »</li>
+                            <li>Elle sera habillée de voile blanc et ornée de deux compositions florales</li>
+                            <li>Un chemin en pétales de fleurs fraîches vous guidera vers votre âme soeur</li>
+                            <li>La décoration d’une partie du lieu sera assurée par notre équipe</li>
+                            <li>Le tarif inclus jusqu’à 60 chaises en bois pour vos convives</li>
+                            <li>Et des livrets de cérémonie leurs seront distribués</li>
+                            <li>Un officiant, porte parole de votre amour, orchestrera la cérémonie
+                            et garantira sa fluidité</li>
+                            <li>A la fin de votre cérémonie, un cocktail avec plusieurs boissons créoles vous sera servi</li>
+                            <li>Un groupe de Steel Band ou de Gwo Ka ambiancera votre cocktail sur le sable sable durant 1h</li>
+                            <li>Un fond musical créole sera diffusé à la fin</li>
+                            <li>Un photographe professionnel dédié immortalisera votre moment (photos de la cérémonie, photos de couple et photos de groupe)</li>
+                            <li>Toutes les photos vous serons transmises par internet</li>
+                            <li>Un livre photo vous sera envoyé après la sélection par vous d’une trentaine de clichés</li>
+                        </ul>
+                    </div>
+                    <a class="uk-button uk-button-primary" data-forfait="9" href="#modal-center" uk-toggle><span>Réserver</span></a>
+                </div>
+                <div class="uk-display-block" href="#"><img src="images/carib/cere/groupe-5@3x.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="uk-panel uk-cartel-white">
+            <div class="uk-inline">
+                <div class="uk-display-block" href="#"><img src="images/carib/cere/groupe-7@3x.jpg" alt=""></div>
+                <div class="uk-detail">
+                    <div>
+                        <h3 class="uk-card-title">cérémonie d’échanges de voeux</h3>
+                        <h4 class="uk-card-subtitle">Forfait:CP10</h4>
+                        <ul class="uk-list uk-list-bullet">
+                            
+                            <li>L’organisation et la gestion d’une magnifique cérémonie d’engagement sur la plage ou en jardin</li>
+                            <li>Toute la documentation et toutes les informations utiles à la bonne réalisation de celle-ci</li>
+                            <li>Le symbole de votre cérémonie à choisir</li>
+                            <li>Des contacts réguliers afin de planifier votre événement</li>
+                            <li>Un officiant, porte parole de votre amour, orchestrera la cérémonie
+                            et garantira sa fluidité</li>
+                            <li> Mais vous aurez également la possibilité de faire intervenir votre maître de cérémonie (Pasteur, Diacre, Rabin…)</li>
+                            <li>Nous mettrons en place une magnifique arche à 4 pieds en bambou (style houppa)</li>
+                            <li>Cette arche symbolise le foyer que vous devrez construire</li>
+                            <li>Elle sera habillée de voile blanc et ornée de deux compositions florales</li>
+                            <li>Un chemin en pétales de fleurs fraîches vous guidera vers votre âme soeur</li>
+                            <li>La décoration d’une partie du lieu sera assurée par notre équipe</li>
+                            <li>Le tarif inclus jusqu’à 60 chaises en bois pour vos convives</li>
+                            <li>Une décoration sur chaque chaise sera mise en place</li>
+                            <li>Et des livrets de cérémonie leurs seront distribués</li>
+                            <li>A la fin de votre cérémonie, un cocktail avec plusieurs boissons créoles ou une coupe de champagne vous sera servi</li>
+                            <li>Un groupe de Steel Band ou de Gwo Ka ambiancera votre cocktail sur le sable sable durant 1h</li>
+                            <li>Un fond musical créole sera diffusé à la fin</li>
+                            <li>Un photographe professionnel dédié immortalisera votre moment (photos de la cérémonie, photos de couple et photos de groupe)</li>
+                            <li>Toutes les photos vous serons transmises par internet</li>
+                            <li>Un livre photo vous sera envoyé après la sélection par vous d’une trentaine de clichés</li>
+                        </ul>
+                    </div>
+                    <a class="uk-button uk-button-primary" href="#modal-center" data-forfait="10" uk-toggle><span>Réserver</span></a>
+                </div>
+                <div class="uk-display-block" href="#"><img src="images/carib/cere/groupe-8@3x.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="uk-panel uk-cartel-white">
+            <div class="uk-inline">
+                <div class="uk-display-block" href="#"><img src="images/carib/cere/groupe-10@3x.jpg" alt=""></div>
+                <div class="uk-detail">
+                    <div>
+                        <h3 class="uk-card-title">cérémonie totalement personnalisée</h3>
+                        <h4 class="uk-card-subtitle">Forfait:CP11</h4>
+                        <ul class="uk-list uk-list-bullet">
+                            <li>Conseil et organisation d’une magnifique cérémonie d’engagement
+sur la plage ou en jardin</li>
+<li>Toute la documentation et toutes les informations utiles à la bonne réalisation de celle-ci</li>
+<li>La recherche de prestataires diverses selon vos souhaits</li>
+<li>La création d’une proposition globale</li>
+<li>Des contacts réguliers afin de planifier votre événement</li>
+<li>Validation du planning général avec l’ensemble de vos intervenants</li>
+<li>Elaboration d’un déroulé de Jour J</li>
+<li>Des propositions sur planches décoration</li>
+<li>La création de votre arche totalement personnalisée</li>
+<li>L’achat de votre décoration</li>
+<li>Mise en place de votre décoration de mariage</li>
+<li>La possibilité de faire un cocktail dinatoire sur le sable</li>
+<li>La possibilité de faire un diner sur le sable</li>
+                        </ul>
+                    </div>
+                    <a class="uk-button uk-button-primary" data-forfait="11" href="#modal-center" uk-toggle><span>Réserver</span></a>
+                </div>
+                <div class="uk-display-block" href="#"><img src="images/carib/cere/groupe-9@3x.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="uk-navbar-container uk-navbar main-nav" uk-navbar>
+        <div class="uk-navbar-container uk-navbar">
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <ul class="uk-subnav nav-mentions">
+                        <li class="uk-first-column">©2016 Caribbean Planner. All rights reserved</li>
+                        <li><a href="#">Mentions Légales</a></li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="uk-navbar-center">
+                <a class="uk-navbar-item uk-logo" href="#"><img src="images/carib/logo/nb/logo@3x.png" alt=""></a>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-first-column">
+                     <ul class="uk-subnav nav-sociaux">
+                        <li class="uk-first-column"><a class="uk-icon" href="#" uk-icon="icon: facebook"></a></li>
+                        <li><a class="uk-icon" href="#" uk-icon="icon: instagram"></a></li>
+                        <li><a class="uk-icon" href="#" uk-icon="icon: pinterest"></a></li>
+                    </ul>
+                </li>
+                <li><a class="uk-navbar-item uk-logo" href="#"><img src="images/carib/logo/logo-iles@3x.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+</footer>
+<div id="modal-center" uk-modal="center: true" class="uk-modal">
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-outside uk-close uk-icon" type="button" uk-close=""></button>
+        <form>
+            <fieldset class="uk-fieldset">
+                <div class="uk-grid uk-grid-small">
+                    <legend class="uk-width-1-1 uk-legend">contact</legend>
+                    <div class="uk-margin uk-width-1-2@s">
+                        <input class="uk-input" type="text" placeholder="Nom">
+                    </div>
+                    <div class="uk-margin uk-width-1-2@s">
+                        <input class="uk-input" type="text" placeholder="Prénom">
+                    </div>
+                    <div class="uk-margin uk-width-1-2@s">
+                        <input class="uk-input" type="text" placeholder="Téléphone">
+                    </div>
+                    <div class="uk-margin uk-width-1-2@s">
+                        <input class="uk-input" type="text" placeholder="Email">
+                    </div>
+                    <div class="uk-margin uk-width-1-1">
+                        <select class="uk-select">
+                        </select>
+                    </div>
+                    <div class="uk-margin uk-width-1-1">
+                        <textarea class="uk-textarea" rows="8" placeholder="Racontez-nous votre mariage de rêve..."></textarea>
+                    </div>
+                </div>
+                <button class="uk-button uk-button-primary" type="submit"><span>Ajouter</span></button>
+            </fieldset>
+        </form>
+    </div>
+</div>
+<script>
+$('.uk-select').empty();
+    $('.uk-detail .uk-button').each(function(){
+        $('.uk-select').append('<option value="'+ $(this).data('forfait')+'">Forfait CP '+ $(this).data('forfait')+'</option>');
+    });
+    $('.uk-detail .uk-button').on('click',function(){
+        $('.uk-select').find('option[value="'+$(this).data('forfait')+'"]').attr('selected', true);
+    });
+</script>
+</body>
+</html>

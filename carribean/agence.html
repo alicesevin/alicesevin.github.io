@@ -41,10 +41,32 @@
         </div>
         <nav class="hide-mobile uk-navbar-container uk-navbar main-nav" uk-navbar>
             <ul class="uk-subnav uk-navbar-center" uk-margin>
-                <li class="uk-first-column"><a href="index2.html">Accueil</a></li>
+                <li class="uk-first-column"><a href="index.html">Accueil</a></li>
                 <li class="uk-active"><a href="agence.html">l’agence</a></li>
                 <li><a href="meteo.html">les îles de guadeloupe</a></li>
-                <li><a href="prestations.html">prestations</a></li>
+                <li>
+                    <a href="prestations.html">Prestations</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active"><a href="ceremonies.html">Cérémonie</a>
+                                    <ul>
+                                        <li><a href="ceremonies.html#Alpinia">Formule Alpinia</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="receptions.html">Réception</a>
+                                <ul>
+                                        <li><a href="receptions.html#Anthurium">Formule Anthurium</a></li>
+                                        <li><a href="receptions.html#Allamanda">Formule Allamanda</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="conciergerie.html">Conciergerie</a>
+                                <ul>
+                                        <li><a href="conciergerie.html#Hibiscus">Formule Hibiscus</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                </li>
                 <li><a href="galerie.html">Galerie</a></li>
                 <li><a href="livre.html">livre d’or</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -55,7 +77,7 @@
             <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-text-center uk-offcanvas-bar-animation uk-offcanvas-slide">
 
              <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical uk-nav-parent-icon" uk-nav="">
-                <li class="uk-first-column"><a href="index2.html">Accueil</a></li>
+                <li class="uk-first-column"><a href="index.html">Accueil</a></li>
                 <li class="uk-active"><a href="agence.html">l’agence</a></li>
                 <li><a href="meteo.html">les îles de guadeloupe</a></li>
                 <li><a href="prestations.html">prestations</a></li>
@@ -109,7 +131,7 @@
                 <div class="item">
                     <div class="uk-first-column">
                         <div class="uk-inline">
-                            <div class="uk-display-block uk-background-cover" style="background-image: url('images/carib/agence/4/groupe-1@3x.jpg');"></div>
+                            <div class="uk-display-block uk-background-cover" style="background-image: url('images/carib/agence/5/groupe-1@3x.jpg');"></div>
                             <div class="uk-padding-large">
                                 <div class="uk-first-column"></div>
                                 <div class="uk-padding-large">
@@ -166,7 +188,7 @@
                                             <br><br>
                                             Son expérience en tant que Directrice de magasin spécialisé puis de Wedding Planner dans sa propre agence depuis 2010, lui fournissent un réseau et le savoir nécessaire pour veiller à ce que ses clients 
                                         </p>
-                                        <a class="uk-button uk-button-primary" href="#"><span>nous contacter</span></a>
+                                        <a class="uk-button uk-button-primary" href="contact.html"><span>nous contacter</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -246,16 +268,39 @@ if ( $(window).width() > 638 ) {
     var owlActive = owl.owlCarousel(owlOptions);
 } else {
     owl.addClass('off');
+    $('.uk-inline>.uk-background-cover').each(function(){
+    var style = $(this).attr('style');
+    if(style && style.indexOf('groupe-1') != -1){
+        style = style.split('groupe-1');
+        style = style.join('photo');
+                $(this).attr('style',style);
+    }
+});
 }
-
 
 $(window).resize(function() {
     if ( $(window).width() > 638 ) {
+        $('.uk-inline>.uk-background-cover').each(function(){
+    var style = $(this).attr('style');
+    if(style && style.indexOf('photo') != -1){
+        style = style.split('photo');
+        style = style.join('groupe-1');
+                $(this).attr('style',style);
+    }
+});
         if (owl.hasClass('off') ) {
             var owlActive = owl.owlCarousel(owlOptions);
             owl.removeClass('off');
         }
     } else {
+        $('.uk-inline>.uk-background-cover').each(function(){
+            var style = $(this).attr('style');
+            if(style && style.indexOf('groupe-1') != -1){
+                style = style.split('groupe-1');
+                style = style.join('photo');
+                $(this).attr('style',style);
+            }
+        });
         if ( !owl.hasClass('off') ) {
             owl.addClass('off').trigger('destroy.owl.carousel');
             owl.find('.owl-stage-outer').children(':eq(0)').unwrap();
