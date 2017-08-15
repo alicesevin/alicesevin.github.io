@@ -1,5 +1,5 @@
 /*LISTE*/
-.uk-list-bullet > li::before{
+.uk-list-bullet > li:before{
     background-image: url("../../images/carib/link/puce@3x.png");
     background-size: contain;
     width: 1.3em;

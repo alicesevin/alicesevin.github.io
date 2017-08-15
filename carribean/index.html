@@ -25,7 +25,7 @@
                         <li><a href="#">EN</a></li>
                     </ul>
                     <ul class="uk-subnav hide-mobile nav-sociaux">
-                        <li class="uk-first-column"><a class="uk-icon" href="#" uk-icon="icon: facebook;ratio: 0.85"></a></li>
+                        <li class="uk-first-column"><a class="uk-icon" href="https://www.facebook.com/Caribbean-Planner-968406453273461/" uk-icon="icon: facebook;ratio: 0.85"></a></li>
                         <li><a class="uk-icon" href="#" uk-icon="icon: instagram;ratio: 0.85"></a></li>
                         <li><a class="uk-icon" href="#" uk-icon="icon: pinterest;ratio: 0.85"></a></li>
                     </ul>
@@ -90,7 +90,7 @@
 
             <div>
                 <ul class="uk-grid-small uk-child-width-auto uk-flex-inline uk-grid" uk-grid="">
-                    <li class="uk-first-column"><a class="uk-icon" href="#" uk-icon="icon: facebook"></a></li>
+                    <li class="uk-first-column"><a class="uk-icon" href="https://www.facebook.com/Caribbean-Planner-968406453273461/" uk-icon="icon: facebook"></a></li>
                     <li><a class="uk-icon" href="#" uk-icon="icon: instagram"></a></li>
                     <li><a class="uk-icon" href="#" uk-icon="icon: pinterest"></a></li>
                 </ul>
@@ -101,10 +101,20 @@
 </div>
 </header>
 <main class="main home">
-    <div class="uk-section uk-section-full uk-section-media uk-flex uk-cover-container" uk-height-viewport="offset-top: true">
-        <img src="images/carib/home/groupe-2@3x.jpg" alt="" uk-cover class="uk-cover">
-        <div class="uk-overlay uk-overlay-title uk-padding-small uk-position-bottom-center">
-            <h1 class="uk-heading-primary uk-text-center">Vivez une aventure inoubliable</h1>
+    <div class="uk-section uk-section-full uk-section-media uk-flex uk-cover-container first-sectionH" uk-height-viewport="offset-top: true">
+        <div class="owl-carousel owl-theme carousel first-carousel">
+            <div class="item">
+                <img src="images/carib/home/groupe-2@3x.jpg" alt="" uk-cover class="uk-cover">
+                <div class="uk-overlay uk-overlay-title uk-padding-small uk-position-bottom-center">
+                    <h1 class="uk-heading-primary uk-text-center">Vivez une aventure inoubliable</h1>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/carib/home/groupe-2@3x.jpg" alt="" uk-cover class="uk-cover">
+                <div class="uk-overlay uk-overlay-title uk-padding-small uk-position-bottom-center">
+                    <h1 class="uk-heading-primary uk-text-center">Vivez une aventure inoubliable</h1>
+                </div>
+            </div>
         </div>
     </div>
     <div class="uk-section uk-section-full">
@@ -139,24 +149,24 @@
             </div>
         </div>
     </div>
-    <div class="uk-section uk-section-full">
+    <div class="uk-section uk-section-full sct-number">
         <div class="uk-container uk-container-small">
             <div class="uk-child-width-1-3@s uk-grid uk-text-center" uk-grid="" uk-scrollspy="cls: uk-animation-fade; target: .uk-result; delay: 500; repeat: true">
                 <div class="uk-first-column">
                     <div class="uk-panel uk-result">
-                        <span class="uk-resultNumber">78</span>
+                        <span class="uk-resultNumber" data-number="78">78</span>
                         <p class="uk-resultText">évènements dans les îles <br>de Guadeloupe</p>
                     </div>
                 </div>
                 <div>
                     <div class="uk-panel uk-result">
-                        <span class="uk-resultNumber">76</span>
+                        <span class="uk-resultNumber" data-number="76">76</span>
                         <p class="uk-resultText">couples mariés <br>depuis 2009</p>
                     </div>
                 </div>
                 <div>
                     <div class="uk-panel uk-result">
-                        <span class="uk-resultNumber">06</span>
+                        <span class="uk-resultNumber" data-number="06">06</span>
                         <p class="uk-resultText">Années d’expériences</p>
                     </div>
                 </div>
@@ -237,7 +247,7 @@
         <div class="uk-container uk-container-full">
             <div class="uk-first-column">
                 <div class="uk-inline">
-                    <div class="owl-carousel owl-theme carousel">
+                    <div class="owl-carousel owl-theme carousel carousel-creation">
                        <div class="item">
                         <div class="uk-display-block">
                             <img src="images/carib/slide_1/visuel@3x.jpg" alt=""></div>
@@ -387,7 +397,7 @@
                 <ul class="uk-navbar-nav">
                     <li class="uk-first-column">
                      <ul class="uk-subnav nav-sociaux">
-                        <li class="uk-first-column"><a class="uk-icon" href="#" uk-icon="icon: facebook"></a></li>
+                        <li class="uk-first-column"><a class="uk-icon" href="https://www.facebook.com/Caribbean-Planner-968406453273461/" uk-icon="icon: facebook"></a></li>
                         <li><a class="uk-icon" href="#" uk-icon="icon: instagram"></a></li>
                         <li><a class="uk-icon" href="#" uk-icon="icon: pinterest"></a></li>
                     </ul>
@@ -400,7 +410,7 @@
 </div>
 </footer>
 <script type="text/javascript">
-$('.carousel').owlCarousel({
+$('.carousel-creation').owlCarousel({
     stagePadding: 25,
     autoplay:true,
     autoplayTimeout:4000,
@@ -416,6 +426,61 @@ $('.carousel').owlCarousel({
     }
     }
 })
+
+$('.first-carousel').owlCarousel({
+    stagePadding: 0,
+    autoplay:true,
+    margin:0,
+    autoplayTimeout:4000,
+    smartSpeed:850,
+    loop:true,
+    items : 1
+})
+
+    $(document).ready(function () {
+        var animActive = false;
+    var deltaTop = function (elem) {
+        var elemTarget = $('.'+elem);
+        if (elemTarget.length) {
+            var elemTargetH = elemTarget.height(),
+                delta = (elemTargetH*2),
+                deltaIn = elemTarget.offset().top - delta,
+                deltaOut = deltaIn + elemTargetH  + delta;
+
+            if ($(window).scrollTop() > deltaIn && $(window).scrollTop() < deltaOut) {
+                return true;
+            }
+
+        }
+        return false;
+    };
+        $(window).scroll(function(){
+            displayAnim();
+        });
+    var displayAnim = function(){
+        if(deltaTop('sct-number') && !animActive){
+            console.log('ing');
+$('.uk-resultNumber').each(function(){
+    $(this).text(0);
+    animActive = true;
+   var $this = $(this),
+                    countTo = $this.data('number');
+                $({ countNum: $this.text()}).animate({countNum: countTo},
+                    {
+                        duration: 5000,
+                        easing:'linear',
+                        step: function() {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function() {
+                            $this.text(this.countNum);
+                        }
+
+                    });
+});
+        }
+    }
+    });
 </script>
 </body>
 </html>
