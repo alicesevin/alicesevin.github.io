@@ -6,15 +6,15 @@
   height: 100%; }
 
 .icon-fb {
-  background: url("img/facebook@3x.png") center center no-repeat;
+  background: url("../img/facebook@3x.png") center center no-repeat;
   background-size: 30%; }
 
 .icon-tw {
-  background: url("img/twitter@3x.png") center center no-repeat;
+  background: url("../img/twitter@3x.png") center center no-repeat;
   background-size: 50%; }
 
 .icon-in {
-  background: url("img/linkedin@3x.png") center center no-repeat;
+  background: url("../img/linkedin@3x.png") center center no-repeat;
   background-size: 40%; }
 
 /*BASE*/
