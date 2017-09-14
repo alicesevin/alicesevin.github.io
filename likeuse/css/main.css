@@ -451,11 +451,11 @@ input, textarea, select {
   @media only screen and (min-width: 768px) {
     .section-home {
       height: 87vh;
-      background: url("img/foreground-hash@3x.png") center center no-repeat;
+      background: url("../img/foreground-hash@3x.png") center center no-repeat;
       background-size: contain;
       overflow: hidden; }
       .section-home:after {
-        background: url("img/background-hash@3x.jpg") center center no-repeat;
+        background: url("../img/background-hash@3x.jpg") center center no-repeat;
         content: '';
         display: block;
         width: 100%;
