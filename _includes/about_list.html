@@ -1,0 +1,11 @@
+<section id="abouts">
+  <ul>
+    {% for about in site.data.about %}
+      <li class="about">
+        <span class="about-number">{{ about.number }}</span>
+        <h3>{{ about.title }}</h3>
+        <p><strong>{{ about.line1 }}<br/>{{ about.line2 }}</strong><br/>{{ about.line3 }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

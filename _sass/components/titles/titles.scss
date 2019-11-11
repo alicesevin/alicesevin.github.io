@@ -1,0 +1,53 @@
+@import 'mixins';
+
+// Create all titles styles in array
+$titles: (
+  'h1': ('font-size': 45px, 'font-weight': 700, 'font-family': $fs-base, 'text-transform': none, 'color': $alpha-dark ),
+  'h2': ('font-size': 14px, 'font-weight': 200, 'font-family': $fs-mono, 'text-transform': uppercase, 'color': $alpha, 'letter-spacing': 1px, 'line-height': 1.5 ),
+  'h3': ('font-size': 18px, 'font-weight': 700, 'font-family': $fs-base, 'text-transform': none, 'color': $alpha-dark ),
+);
+
+// Generate title based on array
+@each $key, $properties in $titles {
+  #{$key} {
+    @include title($properties);
+    transition: .5s;
+    // Force strong fw in case fw is set to title
+    strong {
+      font-weight: 700;
+    }
+  }
+}
+
+/***  H1 Specific case ***/
+
+h1 {
+  line-height: 0.9;
+  span {
+    display: block;
+    margin-bottom: -30px;
+    font-family: $fs-mono;
+    @include text-ratio(100px, 1.2);
+    font-weight: 900;
+    color: $alpha-light;
+    letter-spacing: 2px;
+    pointer-events: none;
+  }
+}
+
+@include breakpoint-up('sm') {
+  h1 {
+    margin-left: -10px;
+    span {
+      display: inline-block;
+      margin-right: -40px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+h3 {
+  small {
+    font-weight: 400;
+  }
+}

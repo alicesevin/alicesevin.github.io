@@ -1,0 +1,17 @@
+- name: Languages
+  content: Python / Php
+
+- name: Frameworks
+  content: Django
+
+- name: CMS
+  content: Wordpress
+
+- name: Templating
+  content: Twig
+
+- name: Versionning
+  content: Git / Gitlab
+
+- name: Base de donnée
+  content: Mysql

@@ -1,0 +1,23 @@
+- number: + 2 ans
+  job: Développeuse Front-end
+  agency: VingtCinq
+  month_start: NOV
+  year_start: 2017
+  month_end: DEC
+  year_end: 2019
+
+- number: + 1 ans
+  job: Développeuse web
+  agency: AW-Studio
+  month_start: JUILL
+  year_start: 2016
+  month_end: NOV
+  year_end: 2017
+
+- number: 2 mois
+  job: Assistance D.A
+  agency: Wise Digital
+  month_start: JUILL
+  year_start: 2015
+  month_end: SEPT
+  year_end: 2015

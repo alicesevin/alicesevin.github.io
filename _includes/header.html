@@ -1,0 +1,23 @@
+<header class="header">
+  <div class="header-bar">
+    <a href="#" class="btn alpha outline"><strong>Contactez</strong> - moi</a>
+    <div class="burger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="menu">
+    <nav>
+      <ul>
+        {%- for page in site.pages -%}
+          {%- if page.title -%}
+            {% unless page.exclude %}
+              <li><a  href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+            {% endunless %}
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </nav>
+  </div>
+</header>

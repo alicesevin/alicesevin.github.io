@@ -1,0 +1,22 @@
+<div class="exp-list">
+  <h2><strong>{{ include.title }}</strong><br/>{{ include.subtitle }}</h2>
+  <ul>
+    {% for item in include.list %}
+      <li class="exp-item">
+        {%- if item.number -%}
+          <p class="more">{{ item.number }}</p>
+        {%- endif -%}
+        <div class="content">
+          <h3 class="job">{{ item.job }}<br/>
+            <small class="agency">chez {{ item.agency }}</small>
+          </h3>
+          {%- if item.month_start -%}
+            <p class="date">{{ item.month_start }} <strong>{{ item.year_start }}</strong> | {{ item.month_end }} <strong>{{ item.year_end }}</strong></p>
+          {%- else -%}
+            <p class="date"><strong>{{ item.year_start }}</strong> | <strong>{{ item.year_end }}</strong></p>
+          {%- endif -%}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

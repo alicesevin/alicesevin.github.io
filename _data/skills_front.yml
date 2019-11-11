@@ -1,0 +1,20 @@
+- name: Animations
+  content: GSAP / CSS / Animate.css
+
+- name: Frameworks
+  content: VueJs / Nuxt
+
+- name: Languages
+  content: Vanilla / ES2018
+
+- name: Librairies
+  content: Bootstrap / Tailwind
+
+- name: Mobile
+  content: Ionic / Cordova
+
+- name: Gestionnaires de paquets
+  content: Npm / Yarn
+
+- name: Bundler / Gestionnaire de tâches
+  content: Webpack / Gulp

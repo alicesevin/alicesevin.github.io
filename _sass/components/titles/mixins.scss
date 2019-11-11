@@ -1,0 +1,38 @@
+/********* Helpers ***********/
+
+/* check if value is in $allowed-properties */
+@function is-allowed($key) {
+  @return  index($allowed-properties, $key);
+}
+
+/********* Mixins ***********/
+
+@mixin set-property($property, $value) {
+  @if ($property == 'font-size') {
+    @include text-ratio($value, 1.3);
+  } @else {
+    #{$property}: #{$value};
+  }
+}
+
+/********* Title Mixin **********/
+
+/* Availabled properties to dynamically generate title based on map */
+
+$allowed-properties: (
+  'font-family',
+  'font-size',
+  'font-weight',
+  'line-height',
+  'text-transform',
+  'letter-spacing',
+  'color'
+);
+
+@mixin title($value) {
+  @each $property, $val in $value {
+    @if is-allowed($property) {
+      @include set-property($property, $val);
+    }
+  }
+}

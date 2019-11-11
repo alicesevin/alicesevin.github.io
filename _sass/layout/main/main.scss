@@ -1,0 +1,18 @@
+main {
+  @include gutter-ratio($gutter-width, true);
+  position: relative;
+
+  >h1 {
+    position: relative;
+    z-index: 1;
+  }
+
+  >section {
+    position: relative;
+    z-index: 1;
+    &,
+    >*+* {
+      margin-top: #{$gutter-width*2};
+    }
+  }
+}
