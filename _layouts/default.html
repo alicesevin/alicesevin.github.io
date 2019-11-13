@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="fr">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <main class="main {{ page.className }}">
+      <h1><span>{{ page.number }}</span>{{ page.title }}</h1>
+      {{ content }}
+      {% include grid.html %}
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

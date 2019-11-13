@@ -1,0 +1,35 @@
+@mixin button-color($bg) {
+  $hover: lighten($bg, 5);
+
+  background-color: $bg;
+  color: set-color($bg);
+  border-color: $bg;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $hover;
+  }
+
+  &.outline {
+    background-color: transparent;
+    border-color: $bg;
+    color: $bg;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $hover;
+      border-color: transparent;
+      color: set-color($hover);
+    }
+  }
+}
+
+@function set-color($color, $dark: $alpha, $light: $white) {
+  @if (lightness($color) <= 50) {
+    @return $dark;
+  } @else {
+    @return $light;
+  }
+}

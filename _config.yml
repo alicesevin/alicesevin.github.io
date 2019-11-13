@@ -1,0 +1,14 @@
+title: Alice Sevin
+author: sevinalice0@gmail.com
+description: Porfolio d'Alice Sevin.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username:
+github_username:  alicesevin
+# theme - fill out if you want to change colors
+
+sass:
+    style: compact
+
+plugins:
+ - jekyll-feed

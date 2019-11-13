@@ -1,0 +1,40 @@
+@import 'mixins';
+
+$colors: (
+  'alpha': $alpha
+);
+
+.link,
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: $fs-mono;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+
+.link {
+  color: $alpha;
+  &:hover,
+  &:active,
+  &:focus {
+    color: lighten($alpha, 5);
+  }
+}
+
+.btn {
+  letter-spacing: 2px;
+  border-radius: 8px;
+  padding: 15px 20px;
+  transition: .3s;
+  border-width: 2px;
+  border-style: solid;
+  font-weight: 500;
+
+  @each $key, $value in $colors {
+    &.#{$key} {
+      @include button-color($value);
+    }
+  }
+}

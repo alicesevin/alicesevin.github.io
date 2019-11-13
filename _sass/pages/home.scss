@@ -1,0 +1,17 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@include breakpoint-up('sm') {
+  .section-home {
+    max-width: 70%;
+  }
+}
+
+@include breakpoint-up('md') {
+  .section-home {
+    max-width: 60%;
+  }
+}

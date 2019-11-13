@@ -1,0 +1,57 @@
+/*******************************
+Breakpoints
+*******************************/
+
+@mixin breakpoint-up($breakpoint) {
+  @media (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($breakpoint) {
+  @media (max-width: map-get($breakpoints, $breakpoint) - 1) {
+    @content;
+  }
+}
+
+/*******************************
+Font-size ratio
+*******************************/
+
+// Automatic font-size for different screens based on ratio
+@mixin text-ratio($fs, $ratio: 1) {
+  font-size: $fs;
+
+  @include breakpoint-up('sm') {
+    font-size: ceil($fs*$ratio);
+  }
+
+  @include breakpoint-up('md') {
+    font-size: ceil($fs*($ratio+0.1));
+  }
+
+  @include breakpoint-up('lg') {
+    font-size: ceil($fs*($ratio+0.2));
+  }
+}
+
+/*******************************
+Gutter ratio
+*******************************/
+
+@mixin gutter-ratio($padding, $resize: false, $ratio: 1) {
+  padding: 100px $padding 50px;
+  max-width: 80%;
+  margin: 0 auto;
+  min-height: 100vh;
+
+  @include breakpoint-up('sm') {
+    $sm-padding: $padding*($ratio+1);
+    padding: 100px $sm-padding 50px;
+  }
+
+  @include breakpoint-up('md') {
+    $md-padding: $padding*($ratio+2);
+    padding: 100px $md-padding 50px;
+  }
+}
