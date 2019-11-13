@@ -23,15 +23,15 @@ Font-size ratio
   font-size: $fs;
 
   @include breakpoint-up('sm') {
-    font-size: $fs*$ratio;
+    font-size: ceil($fs*$ratio);
   }
 
   @include breakpoint-up('md') {
-    font-size: $fs*($ratio+0.1);
+    font-size: ceil($fs*($ratio+0.1));
   }
 
   @include breakpoint-up('lg') {
-    font-size: $fs*($ratio+0.2);
+    font-size: ceil($fs*($ratio+0.2));
   }
 }
 
@@ -43,17 +43,15 @@ Gutter ratio
   padding: 100px $padding 50px;
   max-width: 80%;
   margin: 0 auto;
-  min-height: calc(100vh - #{$padding} - 110px);
+  min-height: 100vh;
 
   @include breakpoint-up('sm') {
     $sm-padding: $padding*($ratio+1);
     padding: 100px $sm-padding 50px;
-    min-height: calc(100vh - #{$sm-padding} - 110px);
   }
 
   @include breakpoint-up('md') {
     $md-padding: $padding*($ratio+2);
     padding: 100px $md-padding 50px;
-    min-height: calc(100vh - #{$md-padding} - 110px);
   }
 }

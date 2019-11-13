@@ -34,7 +34,7 @@
 
 .menu {
   position: fixed;
-  background: $alpha;
+  background: $alpha-lighter;
   top: 0;
   left: 0;
   width: 100%;
@@ -43,7 +43,7 @@
   counter-reset: index;
   transform: translateX(100%);
   transition: 1s;
-  opacity: 0;
+  display: none;
 
   &.is-open {
     transform: translateX(0%);
@@ -53,7 +53,7 @@
     font-weight: 700;
     font-family: $fs-base;
     text-transform: none;
-    color: $alpha-lighter;
+    color: $alpha;
     @include text-ratio(45px, 1.3);
     letter-spacing: 2px;
     line-height: 0.9;
@@ -66,7 +66,7 @@
       font-family: $fs-mono;
       @include text-ratio(100px, 1.2);
       font-weight: 900;
-      color: #7290ff;
+      color: $alpha-light;
       letter-spacing: 2px;
       pointer-events: none;
     }
@@ -89,6 +89,7 @@
   clear: both;
   padding: 15px 12px;
   background: $alpha;
+  display: none;
 
   span {
     display: block;
